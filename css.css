@@ -11,12 +11,6 @@
   --button-hover: #28a9e1;
 }
 
-/* Body styling */
-body{
-  margin-top: 55px;
-  background: var(--body-bg);
-}
-
 /* Navbar */
 #navbar{
   list-style-type: none;
@@ -95,18 +89,33 @@ li.dropdown{
 }
 
 /* Body */
-#about{
-  background: '/images/banner.png';
+
+/* Body styling */
+body{
+  margin-top: 55px;
+  background: var(--body-bg);
+  color: white;
 }
 
 p{
-  color: white;
+  margin: 1rem;
+}
+
+h1{
+  padding-top: 1rem;
+  margin-left: 1rem;
 }
 
 /* Footer */
 footer{
+  text-decoration: none;
   margin-top: 20px;
   padding: 25px;
   text-align: center;
   background-color: var(--button-default);
+}
+
+/* Footer links */
+footer a{
+  color: white;
 }
