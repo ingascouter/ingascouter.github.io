@@ -40,15 +40,6 @@ li{
   font-size: 16px;
 }
 
-/* Styling of logo */
-#logo a{
-  padding: 16px 16px;
-}
-
-#logo img{
-  height: 15px;
-}
-
 /* Styling of dropdown buttons */
 li.dropdown{
   display: inline-block;
@@ -79,6 +70,15 @@ li.dropdown{
 /* Add different color to active and hovered page */
 .active, #navbar li:hover{
   background-color: var(--button-hover);
+}
+
+/* Styling of logo */
+#logo a{
+  padding: 5px 16px;
+}
+
+#logo img{
+  height: 40px;
 }
 
 /* Mobile menu */
