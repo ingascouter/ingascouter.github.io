@@ -23,7 +23,7 @@ li {
   float: left;
 }
 
-#navbar a {
+#navbar a{
   display: inline-block;
   color: white;
   text-align: center;
@@ -35,8 +35,8 @@ li {
   font-size: 14px;
 }
 
-#navbar img{
-  height: 10px;
+#logo img{
+  height: 30px;
 }
 
 li.dropdown {
