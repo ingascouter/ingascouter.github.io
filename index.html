@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hem - Ingå Scouter</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css.css">
+        <link rel="icon" type="image/x-icon" href="/images/whitelogo.png">
+    </head>
+<body>
+
+<header>
+    <nav>
+        <ul id="navbar">
+        <li><a class="active" href="#home">
+            <img src="images/logo.png">
+        </a></li>
+        
+        <li class="dropdown">
+            <a class="dropdown-btn">bli scout <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#">Medlemsansökan</a>
+                <a href="#">Kom med som barn</a>
+                <a href="#">Kom med som vuxen</a>
+            </div>
+        </li>
+        
+        <li class="dropdown">
+            <a class="dropdown-btn">åldersgrupper <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#">Vargungar</a>
+                <a href="#">Äventyrsscouter</a>
+                <a href="#">Spejarscouter</a>
+                <a href="#">Explorerscouter</a>
+                <a href="#">Roverscouter</a>
+                <a href="#">Äldre ledare</a>
+                <a href="#">Familjescouting</a>
+            </div>
+        </li>
+        
+        <li class="dropdown">
+            <a class="dropdown-btn">om kåren <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#">Historia</a>
+                <a href="#">Kårchefer</a>
+                <a href="#">Sponsorer</a>
+                <a href="#">Viktiga typer</a>
+                <a href="#">Våra lokaler</a>
+            </div>
+        </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<section id="#about">
+    <h1>
+        Ingå Scouter
+    </h1>
+    <h2>
+        Roligt tillsammans sedan [år]
+    </h2>
+</section>
+
+
+
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+</script>
+</body>
+</html>
