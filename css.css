@@ -74,11 +74,11 @@ li.dropdown{
 
 /* Styling of logo */
 #logo a{
-  padding: 5px 16px;
+  padding: 2.5px 5px;
 }
 
 #logo img{
-  height: 40px;
+  height: 45px;
 }
 
 /* Mobile menu */
