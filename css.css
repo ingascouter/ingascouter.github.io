@@ -58,7 +58,7 @@ li.dropdown{
 
 /* Styling of the content of the dropdown */
 .dropdown-content{
-  z-index: 1;
+  z-index: 100;
   display: none;
   position: absolute;
   background-color: var(--button-default);
@@ -118,4 +118,27 @@ footer{
 /* Footer links */
 footer a{
   color: white;
+}
+
+/* Scroll to top button */
+#scrolltotop{
+  display: none;
+  position: fixed;
+  z-index: 100;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--button-default);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: larger;
+}
+
+#scrolltotop:active{
+  background: var(--button-hover);
 }
