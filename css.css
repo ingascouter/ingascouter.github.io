@@ -17,7 +17,7 @@ body{
   background: var(--body-bg);
 }
 
-/* Menu */
+/* Navbar */
 #navbar{
   list-style-type: none;
   margin: 0;
@@ -64,6 +64,7 @@ li.dropdown{
 
 /* Styling of the content of the dropdown */
 .dropdown-content{
+  z-index: 1;
   display: none;
   position: absolute;
   background-color: var(--button-default);
@@ -86,7 +87,12 @@ li.dropdown{
   background-color: var(--button-hover);
 }
 
-
+/* Mobile menu */
+@media (hover:none) {
+  #navbar{
+    display: none;
+  }
+}
 
 /* Body */
 #about{
