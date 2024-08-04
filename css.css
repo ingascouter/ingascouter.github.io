@@ -7,6 +7,11 @@ html {
   color-scheme: light dark;
 }
 
+body {
+  padding-top: 50px;
+}
+
+
 /* Menu */
 #navbar {
   list-style-type: none;
@@ -36,7 +41,7 @@ li {
 }
 
 #logo img{
-  height: 30px;
+  height: 15px;
 }
 
 li.dropdown {
@@ -80,4 +85,8 @@ li.dropdown {
 
 #about {
   background-image: '/images/banner2.png';
+}
+
+p {
+  font-size: 40px;
 }
