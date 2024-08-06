@@ -9,6 +9,15 @@
   --body-bg: black;
   --button-default: #253765;
   --button-hover: #28a9e1;
+  --font-primary: 'Comic Sans MS', cursive;
+}
+
+/* Body styling */
+body{
+  margin-top: 55px;
+  background: var(--body-bg);
+  color: white;
+  font-family: var(--font-primary);
 }
 
 /* Navbar */
@@ -34,10 +43,11 @@ li{
   color: white;
   text-align: center;
   padding: 16px 24px;
-  font-family: 'Comic Sans MS', cursive;
   text-decoration: none;
   text-transform: capitalize;
   font-size: 16px;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 /* Styling of dropdown buttons */
@@ -89,17 +99,6 @@ li.dropdown{
 }
 
 /* Body */
-
-/* Body styling */
-body{
-  margin-top: 55px;
-  background: var(--body-bg);
-  color: white;
-}
-
-p{
-  margin: 1rem;
-}
 
 h1{
   padding-top: 1rem;
