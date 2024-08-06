@@ -100,9 +100,8 @@ li.dropdown{
 
 /* Body */
 
-h1{
-  padding-top: 1rem;
-  margin-left: 1rem;
+main{
+  margin: 16px;
 }
 
 /* Footer */
