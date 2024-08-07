@@ -33,7 +33,7 @@ body{
 }
 
 /* Set direction of navbar list */
-li{
+#navbar li{
   float: left;
 }
 
@@ -116,6 +116,10 @@ footer{
 /* Footer links */
 footer a{
   color: white;
+}
+
+.socials a{
+  text-decoration: none;
 }
 
 /* Scroll to top button */
