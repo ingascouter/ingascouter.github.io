@@ -101,7 +101,11 @@ li.dropdown{
 /* Body */
 
 main{
-  margin: 16px;
+  margin: 1rem;
+}
+
+main h1{
+  padding: 1rem;
 }
 
 /* Footer */
@@ -116,6 +120,10 @@ footer{
 /* Footer links */
 footer a{
   color: white;
+}
+
+.socials{
+  margin-top: 8px;
 }
 
 .socials a{
