@@ -124,6 +124,11 @@ footer a{
 
 .socials{
   margin-top: 8px;
+  font-size: 40px;
+}
+
+.socials i{
+  margin: 8px 10px;
 }
 
 /* Scroll to top button */
