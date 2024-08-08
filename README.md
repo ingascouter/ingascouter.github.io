@@ -1,2 +1,2 @@
 # Just a simple website for Ingå Scouter rf
-Accessible at [https://ingascouter.github.io/ingascouter/](https://ingascouter.github.io/ingascouter/)
+Accessible at [ingascouter.github.io](https://ingascouter.github.io)
