@@ -91,12 +91,12 @@ li.dropdown{
   height: 40px;
 }
 
-/* Mobile menu */
+/* Mobile menu
 @media (hover:none) {
   #navbar{
     display: none;
   }
-}
+} */
 
 /* Body */
 
