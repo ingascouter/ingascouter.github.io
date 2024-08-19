@@ -4,6 +4,17 @@
   padding: 0;
 }
 
+/* Add fonts */
+@font-face{
+  font-family: Bremen;
+  src: url(images/Bremen\ Bold.otf);
+}
+
+@font-face{
+  font-family: Tondu;
+  src: url(images/Tondu_Beta.ttf);
+}
+
 /* Variables */
 :root {
   --body-bg: black;
@@ -30,6 +41,7 @@ body{
   width: 100%;
   position: fixed;
   transition: top 0.4s;
+  font-size: 16px;
 }
 
 /* Set direction of navbar list */
@@ -45,7 +57,6 @@ body{
   padding: 16px 24px;
   text-decoration: none;
   text-transform: capitalize;
-  font-size: 16px;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -74,7 +85,7 @@ li.dropdown{
 
 /* Underline dropdown content on hover */
 #navbar .dropdown-content a:hover{
-  text-decoration: underline;
+  text-decoration: wavy underline;
 }
 
 /* Add different color to active and hovered page */
@@ -101,7 +112,8 @@ li.dropdown{
 /* Body */
 
 main{
-  margin: 1rem;
+  margin: 2rem 5rem;
+  min-height: 100svh;
 }
 
 main h1{
@@ -110,11 +122,21 @@ main h1{
 
 /* Footer */
 footer{
+  display: grid;
+  grid-template-columns: auto auto auto;
   text-decoration: none;
   margin-top: 20px;
   padding: 25px;
   text-align: center;
   background-color: var(--button-default);
+}
+
+footer img{
+  height: 250px;
+}
+
+footer h1{
+  font-family: Bremen;
 }
 
 /* Footer links */
