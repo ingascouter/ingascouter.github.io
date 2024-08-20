@@ -17,7 +17,8 @@
 
 /* Variables */
 :root {
-  --body-bg: black;
+  --body-txt: black;
+  --body-bg: white;
   --button-default: #253765;
   --button-hover: #28a9e1;
   --font-primary: 'Comic Sans MS', cursive;
@@ -27,7 +28,7 @@
 body{
   margin-top: 55px;
   background: var(--body-bg);
-  color: white;
+  color: var(--body-txt);
   font-family: var(--font-primary);
 }
 
@@ -128,6 +129,7 @@ main h1{
 
 /* Footer */
 footer{
+  color: white;
   display: grid;
   grid-template-columns: auto auto auto;
   text-decoration: none;
