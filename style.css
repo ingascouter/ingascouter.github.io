@@ -132,7 +132,9 @@ footer{
 }
 
 footer img{
-  height: 250px;
+  height: 160px;
+  text-align: center;
+  margin: auto;
 }
 
 footer h1{
