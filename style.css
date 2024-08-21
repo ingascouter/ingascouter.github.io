@@ -16,12 +16,18 @@
 }
 
 /* Variables */
-:root {
+:root{
   --body-txt: black;
   --body-bg: white;
+  --body-font: Arial, Helvetica, sans-serif;
   --button-default: #253765;
   --button-hover: #28a9e1;
   --font-primary: 'Comic Sans MS', cursive;
+}
+
+.darkmode{
+  --body-txt: white;
+  --body-bg: black;
 }
 
 /* Body styling */
@@ -29,11 +35,12 @@ body{
   margin-top: 55px;
   background: var(--body-bg);
   color: var(--body-txt);
-  font-family: var(--font-primary);
+  font-family: var(--body-font);
 }
 
 /* Navbar */
 #navbar{
+  font-family: var(--font-primary);
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -123,6 +130,10 @@ main{
   min-height: 100svh;
 }
 
+main a{
+  color: var(--body-txt);
+}
+
 main h1{
   padding: 1rem;
 }
@@ -134,6 +145,7 @@ footer{
   justify-content: space-around;
   align-items: center;
   justify-items: center;
+  font-family: var(--font-primary);
   color: white;
   text-decoration: none;
   margin-top: 20px;
