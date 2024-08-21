@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hem &middot; Ingå Scouter</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="/images/whitelogo.ico">
-    </head>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hem &middot; Ingå Scouter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/whitelogo.ico">
+</head>
 <body>
 
 <header>
@@ -97,39 +97,6 @@
 <button onclick="topFunction()" id="scrolltotop" title="Gå till toppen">
     <i class="fa fa-arrow-up"></i>
 </button>
-
-
-<script>
-    // Hide navbar on scroll
-    var prevScrollpos = window.pageYOffset;
-
-    // Show button to scroll to top when user scrolls down x amount
-    let mybutton = document.getElementById("scrolltotop");
-
-    window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        // Navbar hide/show functionality
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-        } else {
-            document.getElementById("navbar").style.top = "-55px";
-        }
-        prevScrollpos = currentScrollPos;
-
-        // Scroll to top button functionality
-        if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    };
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-</script>
-
-
+<script src="script.js"></script>
 </body>
 </html>

@@ -129,9 +129,12 @@ main h1{
 
 /* Footer */
 footer{
-  color: white;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  color: white;
   text-decoration: none;
   margin-top: 20px;
   padding: 25px;
@@ -140,9 +143,7 @@ footer{
 }
 
 footer img{
-  height: 160px;
-  text-align: center;
-  margin: auto;
+  height: 150px;
 }
 
 footer h1{
