@@ -108,11 +108,11 @@ li.dropdown{
 }
 
 /* Styling of logo */
-#logo a{
+.nav-img a{
   padding: 5px 7.5px;
 }
 
-#logo img{
+#navbar img{
   height: 40px;
 }
 
