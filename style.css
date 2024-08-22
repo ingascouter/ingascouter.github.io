@@ -65,8 +65,6 @@ body{
   padding: 16px 24px;
   text-decoration: none;
   text-transform: capitalize;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 /* Styling of dropdown buttons */
