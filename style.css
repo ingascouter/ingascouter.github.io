@@ -65,6 +65,7 @@ body{
   padding: 16px 24px;
   text-decoration: none;
   text-transform: capitalize;
+  line-height: 23px;
 }
 
 /* Styling of dropdown buttons */
@@ -103,11 +104,6 @@ li.dropdown{
 /* Add different color to active and hovered page */
 .active, #navbar li:hover{
   background-color: var(--button-hover);
-}
-
-/* Styling of logo */
-#logo a{
-  padding: 5px 7.5px;
 }
 
 #navbar img{
