@@ -102,8 +102,12 @@ li.dropdown{
 }
 
 /* Add different color to active and hovered page */
-.active, #navbar li:hover{
+li .active, #navbar li:hover{
   background-color: var(--button-hover);
+}
+
+.dropdown-content .active{
+  text-decoration: wavy underline;
 }
 
 #navbar img{
@@ -130,6 +134,28 @@ main a{
 
 main h1{
   padding: 1rem;
+}
+
+@media (hover: none){
+  #navbar .dropdown{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px){
+  
+
+  main{
+    font-size: larger;
+    margin: 5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 480px){
+  main{
+    font-size: larger;
+    margin: 5rem 1rem;
+  }
 }
 
 /* Footer */
@@ -169,6 +195,53 @@ footer a{
 .socials i{
   margin: 8px 10px;
 }
+
+@media screen and (max-width: 770px){
+  footer {
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+        "logo-right footer-text"
+        "logo-left footer-text";
+  }
+
+  .logo-left {
+      grid-area: logo-left;
+  }
+
+  .footer-text {
+      grid-area: footer-text;
+  }
+
+  .logo-right {
+      grid-area: logo-right;
+      height: 120px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  footer {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-template-areas: 
+      "logo-left logo-right"
+      "footer-text footer-text";
+  }
+
+  .footer-text {
+      grid-area: footer-text;
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  .logo-left {
+      grid-area: logo-left;
+  }
+
+  .logo-right {
+      grid-area: logo-right;
+  }
+}
+
 
 /* Scroll to top button */
 #scrolltotop{
