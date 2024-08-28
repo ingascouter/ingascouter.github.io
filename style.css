@@ -262,6 +262,7 @@ footer a{
   font-size: larger;
 }
 
-#scrolltotop:active{
-  background: var(--button-default);
+#scrolltotop:active, #scrolltotop:focus{
+  background: var(--body-bg);
+  color: var(--body-txt);
 }
