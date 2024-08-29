@@ -243,6 +243,7 @@ footer a{
 
   .logo-right{
       grid-area: logo-right;
+      height: 80px;
   }
 }
 
