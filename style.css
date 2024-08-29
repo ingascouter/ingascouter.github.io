@@ -228,7 +228,7 @@ footer a{
   }
 
   footer img{
-      height: 80px;
+      height: 100px;
   }
 
   .footer-text{
@@ -239,7 +239,6 @@ footer a{
 
   .logo-left{
       grid-area: logo-left;
-      height: 100px;
   }
 
   .logo-right{
