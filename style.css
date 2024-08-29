@@ -115,7 +115,7 @@ li .active, #navbar li:hover{
 }
 
 /* Mobile menu
-@media (hover:none) {
+@media (hover:none){
   #navbar{
     display: none;
   }
@@ -197,29 +197,29 @@ footer a{
 }
 
 @media screen and (max-width: 770px){
-  footer {
+  footer{
     grid-template-columns: auto 1fr;
     grid-template-areas: 
         "logo-right footer-text"
         "logo-left footer-text";
   }
 
-  .logo-left {
+  .logo-left{
       grid-area: logo-left;
   }
 
-  .footer-text {
+  .footer-text{
       grid-area: footer-text;
   }
 
-  .logo-right {
+  .logo-right{
       grid-area: logo-right;
       height: 120px;
   }
 }
 
 @media screen and (max-width: 480px){
-  footer {
+  footer{
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     grid-template-areas: 
@@ -227,20 +227,23 @@ footer a{
       "footer-text footer-text";
   }
 
-  .footer-text {
+  footer img{
+      height: 80px;
+  }
+
+  .footer-text{
       grid-area: footer-text;
       text-align: center;
       margin-top: 20px;
   }
 
-  .logo-left {
+  .logo-left{
       grid-area: logo-left;
       height: 100px;
   }
 
-  .logo-right {
+  .logo-right{
       grid-area: logo-right;
-      height: 80px;
   }
 }
 
