@@ -235,10 +235,12 @@ footer a{
 
   .logo-left {
       grid-area: logo-left;
+      height: 100px;
   }
 
   .logo-right {
       grid-area: logo-right;
+      height: 80px;
   }
 }
 
