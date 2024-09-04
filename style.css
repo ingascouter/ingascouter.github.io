@@ -1,22 +1,22 @@
 /* Removing default spacings*/
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
 /* Add fonts */
-@font-face{
+@font-face {
   font-family: Bremen;
   src: url(images/Bremen\ Bold.otf);
 }
 
-@font-face{
+@font-face {
   font-family: Tondu;
   src: url(images/Tondu_Beta.ttf);
 }
 
 /* Variables */
-:root{
+:root {
   --body-txt: black;
   --body-bg: white;
   --body-font: Arial, Helvetica, sans-serif;
@@ -25,13 +25,13 @@
   --font-primary: 'Comic Sans MS', cursive;
 }
 
-.darkmode{
+.darkmode {
   --body-txt: white;
   --body-bg: black;
 }
 
 /* Body styling */
-body{
+body {
   margin-top: 55px;
   background: var(--body-bg);
   color: var(--body-txt);
@@ -39,7 +39,7 @@ body{
 }
 
 /* Navbar */
-#navbar{
+#navbar {
   font-family: var(--font-primary);
   list-style-type: none;
   margin: 0;
@@ -53,12 +53,12 @@ body{
 }
 
 /* Set direction of navbar list */
-#navbar li{
+#navbar li {
   float: left;
 }
 
 /* Styling of all buttons in navbar */
-#navbar a{
+#navbar a {
   display: inline-block;
   color: white;
   text-align: center;
@@ -69,48 +69,49 @@ body{
 }
 
 /* Styling of dropdown buttons */
-li.dropdown{
+li.dropdown {
   display: inline-block;
   position: relative;
   cursor: pointer;
 }
 
 /* Styling of the content of the dropdown */
-.dropdown-content{
+.dropdown-content {
   z-index: 100;
   display: none;
   position: absolute;
   background-color: var(--button-default);
-  border-radius: 0 0 15px 15px ;
+  border-radius: 0 0 15px 15px;
   text-align: center;
   width: inherit;
 }
 
 /* So that content width matches parent */
-#navbar .dropdown-content a{
+#navbar .dropdown-content a {
   padding: 16px 0;
 }
 
 /* Make dropdown content visible */
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content {
   display: block;
 }
 
 /* Underline dropdown content on hover */
-#navbar .dropdown-content a:hover{
+#navbar .dropdown-content a:hover {
   text-decoration: wavy underline;
 }
 
 /* Add different color to active and hovered page */
-li .active, #navbar li:hover{
+li .active,
+#navbar li:hover {
   background-color: var(--button-hover);
 }
 
-.dropdown-content .active{
+.dropdown-content .active {
   text-decoration: wavy underline;
 }
 
-#navbar img{
+#navbar img {
   height: 40px;
 }
 
@@ -123,43 +124,43 @@ li .active, #navbar li:hover{
 
 /* Body */
 
-main{
+main {
   margin: 2rem 5rem;
   min-height: 100svh;
 }
 
-main a{
+main a {
   color: var(--body-txt);
 }
 
-main h1{
+main h1 {
   padding: 1rem;
 }
 
-@media (hover: none){
-  #navbar .dropdown{
+@media (hover: none) {
+  #navbar .dropdown {
     display: none;
   }
 }
 
-@media screen and (max-width: 770px){
-  
+@media screen and (max-width: 770px) {
 
-  main{
+
+  main {
     font-size: larger;
     margin: 5rem 2rem;
   }
 }
 
-@media screen and (max-width: 480px){
-  main{
+@media screen and (max-width: 480px) {
+  main {
     font-size: larger;
     margin: 5rem 1rem;
   }
 }
 
 /* Footer */
-footer{
+footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-around;
@@ -174,82 +175,82 @@ footer{
   background-color: var(--button-default);
 }
 
-footer img{
+footer img {
   height: 150px;
 }
 
-footer h1{
+footer h1 {
   font-family: Bremen;
 }
 
 /* Footer links */
-footer a{
+footer a {
   color: white;
 }
 
-.socials{
+.socials {
   margin-top: 8px;
   font-size: 40px;
 }
 
-.socials i{
+.socials i {
   margin: 8px 10px;
 }
 
-@media screen and (max-width: 770px){
-  footer{
+@media screen and (max-width: 770px) {
+  footer {
     grid-template-columns: auto 1fr;
-    grid-template-areas: 
-        "logo-right footer-text"
-        "logo-left footer-text";
+    grid-template-areas:
+      "logo-right footer-text"
+      "logo-left footer-text";
   }
 
-  .logo-left{
-      grid-area: logo-left;
+  .logo-left {
+    grid-area: logo-left;
   }
 
-  .footer-text{
-      grid-area: footer-text;
+  .footer-text {
+    grid-area: footer-text;
   }
 
-  .logo-right{
-      grid-area: logo-right;
-      height: 120px;
+  .logo-right {
+    grid-area: logo-right;
+    height: 120px;
   }
 }
 
-@media screen and (max-width: 480px){
-  footer{
+@media screen and (max-width: 480px) {
+  footer {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    grid-template-areas: 
+    grid-template-areas:
       "logo-left logo-right"
       "footer-text footer-text";
   }
 
-  footer img{
-      height: 100px;
+  footer img {
+    height: 100px;
   }
 
-  .footer-text{
-      grid-area: footer-text;
-      text-align: center;
-      margin-top: 20px;
+  .footer-text {
+    grid-area: footer-text;
+    text-align: center;
+    margin-top: 20px;
   }
 
-  .logo-left{
-      grid-area: logo-left;
+  .logo-left {
+    grid-area: logo-left;
   }
 
-  .logo-right{
-      grid-area: logo-right;
-      height: 80px;
+  .logo-right {
+    grid-area: logo-right;
+    height: 80px;
   }
 }
 
 
 /* Scroll to top button */
-#scrolltotop{
+#scrolltotop {
   display: none;
   position: fixed;
   z-index: 100;
@@ -259,7 +260,7 @@ footer a{
   height: 50px;
   border-radius: 50%;
   background: var(--button-hover);
-  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   color: white;
   border: none;
   outline: none;
@@ -267,7 +268,8 @@ footer a{
   font-size: larger;
 }
 
-#scrolltotop:active, #scrolltotop:focus{
+#scrolltotop:active,
+#scrolltotop:focus {
   background: var(--body-bg);
   color: var(--body-txt);
 }
