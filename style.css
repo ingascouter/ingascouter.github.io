@@ -1,10 +1,9 @@
-/* Removing default spacings*/
+/* ------------ Setup ------------ */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* Add fonts */
 @font-face {
   font-family: Bremen;
   src: url(images/Bremen\ Bold.otf);
@@ -30,15 +29,14 @@
   --body-bg: black;
 }
 
-/* Body styling */
 body {
-  margin-top: 55px;
   background: var(--body-bg);
   color: var(--body-txt);
   font-family: var(--body-font);
+  margin-top: 55px;
 }
 
-/* Navbar */
+/* ------------ Navbar ------------ */
 #navbar {
   font-family: var(--font-primary);
   list-style-type: none;
@@ -52,12 +50,10 @@ body {
   font-size: 16px;
 }
 
-/* Set direction of navbar list */
 #navbar li {
   float: left;
 }
 
-/* Styling of all buttons in navbar */
 #navbar a {
   display: inline-block;
   color: white;
@@ -68,14 +64,12 @@ body {
   line-height: 23px;
 }
 
-/* Styling of dropdown buttons */
 li.dropdown {
   display: inline-block;
   position: relative;
   cursor: pointer;
 }
 
-/* Styling of the content of the dropdown */
 .dropdown-content {
   z-index: 100;
   display: none;
@@ -86,22 +80,18 @@ li.dropdown {
   width: inherit;
 }
 
-/* So that content width matches parent */
 #navbar .dropdown-content a {
   padding: 16px 0;
 }
 
-/* Make dropdown content visible */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Underline dropdown content on hover */
 #navbar .dropdown-content a:hover {
   text-decoration: wavy underline;
 }
 
-/* Add different color to active and hovered page */
 li .active,
 #navbar li:hover {
   background-color: var(--button-hover);
@@ -115,18 +105,18 @@ li .active,
   height: 40px;
 }
 
-/* Mobile menu
-@media (hover:none){
-  #navbar{
-    display: none;
-  }
-} */
-
-/* Body */
+/* ------------ Main ------------ */
+main .banner {
+  border-radius: 50px;
+  margin-top: 5rem;
+  max-width: 100%;
+  height: auto;
+}
 
 main {
   margin: 2rem 5rem;
   min-height: 100svh;
+  line-height: 2rem;
 }
 
 main a {
@@ -144,8 +134,6 @@ main h1 {
 }
 
 @media screen and (max-width: 770px) {
-
-
   main {
     font-size: larger;
     margin: 5rem 2rem;
@@ -159,8 +147,9 @@ main h1 {
   }
 }
 
-/* Footer */
+/* ------------ Footer ------------ */
 footer {
+  position: sticky;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-around;
@@ -169,14 +158,15 @@ footer {
   font-family: var(--font-primary);
   color: white;
   text-decoration: none;
-  margin-top: 20px;
   padding: 25px;
   text-align: center;
   background-color: var(--button-default);
+  grid-template-areas: "logo-left footer-text logo-right";
 }
 
 footer img {
   height: 150px;
+  width: auto;
 }
 
 footer h1 {
@@ -197,25 +187,25 @@ footer a {
   margin: 8px 10px;
 }
 
+.logo-left {
+  grid-area: logo-left;
+}
+
+.footer-text {
+  grid-area: footer-text;
+}
+
+.logo-right {
+  grid-area: logo-right;
+  height: 120px;
+}
+
 @media screen and (max-width: 770px) {
   footer {
     grid-template-columns: auto 1fr;
     grid-template-areas:
       "logo-right footer-text"
       "logo-left footer-text";
-  }
-
-  .logo-left {
-    grid-area: logo-left;
-  }
-
-  .footer-text {
-    grid-area: footer-text;
-  }
-
-  .logo-right {
-    grid-area: logo-right;
-    height: 120px;
   }
 }
 
@@ -230,26 +220,20 @@ footer a {
 
   footer img {
     height: 100px;
+    width: auto;
   }
 
   .footer-text {
-    grid-area: footer-text;
-    text-align: center;
     margin-top: 20px;
   }
 
-  .logo-left {
-    grid-area: logo-left;
-  }
-
   .logo-right {
-    grid-area: logo-right;
     height: 80px;
   }
 }
 
 
-/* Scroll to top button */
+/* ------------ Scroll to top button ------------ */
 #scrolltotop {
   display: none;
   position: fixed;
