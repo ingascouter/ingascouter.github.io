@@ -114,7 +114,6 @@ main .banner {
 }
 
 main {
-  margin: 2rem 5rem;
   min-height: 100svh;
   line-height: 2rem;
 }
@@ -145,6 +144,44 @@ main h1 {
     font-size: larger;
     margin: 5rem 1rem;
   }
+}
+
+main .banner2 {
+  width: 100%;
+}
+
+.group-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  background: var(--body-bg);
+  border: 8px solid rgba(185, 56, 44, 0.6);
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aldersgrupp-logo {
+  height: 130px;
+}
+
+.grupp {
+  font-family: Tondu;
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.alder {
+  color: var(--button-hover);
 }
 
 /* ------------ Footer ------------ */
