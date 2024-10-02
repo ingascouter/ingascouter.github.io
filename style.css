@@ -110,6 +110,7 @@ li .active,
   width: 100%;
   height: 250px;
   object-fit: cover;
+  filter: brightness(.8);
 }
 
 main {
