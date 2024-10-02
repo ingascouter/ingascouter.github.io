@@ -107,10 +107,9 @@ li .active,
 
 /* ------------ Main ------------ */
 main .banner {
-  border-radius: 50px;
-  margin-top: 3rem;
-  max-width: 70svw;
-  height: auto;
+  width: 100%;
+  height: 250px;
+  object-fit: none;
 }
 
 main {
