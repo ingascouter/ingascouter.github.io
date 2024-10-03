@@ -92,7 +92,7 @@ li.dropdown {
   text-decoration: wavy underline;
 }
 
-li.active,
+li:has(.active),
 #navbar li:hover {
   background-color: var(--button-hover);
 }
