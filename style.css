@@ -114,7 +114,7 @@ li .active,
 }
 
 main {
-  min-height: 100svh;
+  min-height: 60svh;
   line-height: 2rem;
   padding: 0 2rem;
 }
