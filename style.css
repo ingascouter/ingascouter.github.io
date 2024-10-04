@@ -180,7 +180,6 @@ blockquote:after {
   height: 150px;
   border-radius: 30px;
   background: var(--body-bg);
-  box-shadow: rgba(185, 56, 44, 0.6) 0 0 0 8px;
   margin-right: 30px;
   display: flex;
   justify-content: center;
