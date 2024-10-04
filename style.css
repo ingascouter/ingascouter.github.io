@@ -159,6 +159,24 @@ main h1 {
   transform: translateY(-50px);
 }
 
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
+blockquote:before,
+blockquote:after {
+  display: inline-block;
+  vertical-align: bottom;
+  color: var(--body-txt);
+  font-size: 4em;
+  top: .2em;
+  position: relative;
+}
+
 .logo-container {
   width: 150px;
   height: 150px;
