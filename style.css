@@ -152,7 +152,7 @@ main h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-90px);
+  transform: translateY(-80px);
 }
 
 .group-info {
