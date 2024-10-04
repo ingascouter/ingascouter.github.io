@@ -179,7 +179,7 @@ blockquote:after {
   width: 150px;
   height: 150px;
   border-radius: 30px;
-  background: var(--body-bg);
+  background: white;
   margin-right: 30px;
   display: flex;
   justify-content: center;
