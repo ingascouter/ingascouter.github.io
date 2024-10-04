@@ -156,6 +156,10 @@ main h1 {
   align-items: center;
 }
 
+.group blockquote {
+  margin-top: 40px;
+}
+
 blockquote:before {
   content: open-quote;
 }
