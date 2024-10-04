@@ -97,7 +97,7 @@ li:has(.active),
   background-color: var(--button-hover);
 }
 
-.dropdown-content .active {
+#navbar .dropdown-content a.active {
   text-decoration: wavy underline;
 }
 
