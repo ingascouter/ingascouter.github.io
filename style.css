@@ -155,6 +155,10 @@ main h1 {
   transform: translateY(-90px);
 }
 
+.group-info {
+  transform: translateY(-50px);
+}
+
 .logo-container {
   width: 150px;
   height: 150px;
