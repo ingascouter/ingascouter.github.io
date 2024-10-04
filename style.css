@@ -145,16 +145,15 @@ main h1 {
   }
 }
 
+.group {
+  transform: translateY(-80px);
+}
+
 .group-title {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-80px);
-}
-
-.group-info {
-  transform: translateY(-50px);
 }
 
 blockquote:before {
