@@ -88,6 +88,10 @@ li.dropdown {
   display: block;
 }
 
+#navbar .dropdown-content a.active {
+  text-decoration: underline;
+}
+
 #navbar .dropdown-content a:hover {
   text-decoration: wavy underline;
 }
@@ -95,10 +99,6 @@ li.dropdown {
 li:has(.active),
 #navbar li:hover {
   background-color: var(--button-hover);
-}
-
-#navbar .dropdown-content a.active {
-  text-decoration: wavy underline;
 }
 
 #navbar img {
