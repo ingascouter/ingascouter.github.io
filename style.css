@@ -135,14 +135,14 @@ main h1 {
 
 @media screen and (max-width: 770px) {
   main {
-    font-size: larger;
+    font-size: normal;
     margin: 5rem 2rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   main {
-    font-size: larger;
+    font-size: normal;
     margin: 5rem 1rem;
   }
 }
