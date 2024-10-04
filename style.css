@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: Bremen;
-  src: url(images/Bremen\ Bold.otf);
+  src: url(/assets/fonts/Bremen\ Bold.otf);
 }
 
 @font-face {
   font-family: Tondu;
-  src: url(images/Tondu_Beta.ttf);
+  src: url(/assets/fonts/Tondu_Beta.ttf);
 }
 
 /* Variables */
