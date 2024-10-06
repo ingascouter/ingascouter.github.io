@@ -21,7 +21,7 @@
   --body-font: Arial, Helvetica, sans-serif;
   --button-default: #253765;
   --button-hover: #28a9e1;
-  --font-primary: 'Comic Sans MS', cursive;
+  --font-primary: Arial, Helvetica, sans-serif;
 }
 
 .darkmode {
@@ -68,7 +68,6 @@ body {
 li.dropdown {
   display: inline-block;
   position: relative;
-  cursor: pointer;
 }
 
 .dropdown-content {
@@ -78,10 +77,6 @@ li.dropdown {
   border-radius: 0 0 15px 15px;
   text-align: center;
   width: inherit;
-}
-
-#navbar .dropdown-content a {
-  padding: 16px 0;
 }
 
 .dropdown:hover .dropdown-content {
@@ -114,7 +109,7 @@ li:has(.active),
 }
 
 main {
-  min-height: calc(100svh - 300px)
+  min-height: calc(100svh - 300px);
   line-height: 2rem;
   padding: 0 2rem;
 }
