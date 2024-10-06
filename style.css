@@ -122,24 +122,6 @@ main h1 {
   padding: 1rem;
 }
 
-@media (hover: none) {
-  #navbar .dropdown {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  main {
-    margin: 1rem 2rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  main {
-    margin: 0 1rem;
-  }
-}
-
 .group {
   transform: translateY(-80px);
 }
@@ -153,6 +135,9 @@ main h1 {
 
 .group blockquote {
   margin-top: 40px;
+  border: 5px solid var(--button-default);
+  border-radius: 20px;
+  padding: 10px;
 }
 
 blockquote:before {
@@ -254,7 +239,33 @@ footer a {
   height: 120px;
 }
 
+
+@media (hover: none) {
+  #navbar .dropdown {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 770px) {
+  main {
+    margin: 0rem 2rem;
+  }
+
+  .group-title {
+    flex-direction: column;
+  }
+
+  .logo-container {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  div:has(.grupp) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   footer {
     grid-template-columns: auto 1fr;
     grid-template-areas:
@@ -264,6 +275,10 @@ footer a {
 }
 
 @media screen and (max-width: 480px) {
+  main {
+    margin: 0 1rem;
+  }
+
   footer {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
