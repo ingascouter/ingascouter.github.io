@@ -134,10 +134,14 @@ main h1 {
 }
 
 .group-info {
-  border: 5px solid var(--button-default);
   border-radius: 20px;
-  padding: 10px;
+  padding: 20px;
   margin-top: 40px;
+  background: var(--button-default);
+}
+
+.group-info * {
+  color: white;
 }
 
 .group-info p {
@@ -156,7 +160,6 @@ blockquote:before,
 blockquote:after {
   display: inline-block;
   vertical-align: bottom;
-  color: var(--body-txt);
   font-size: 4em;
   top: .2em;
   position: relative;
