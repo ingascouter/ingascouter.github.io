@@ -133,11 +133,15 @@ main h1 {
   align-items: center;
 }
 
-.group blockquote {
-  margin-top: 40px;
+.group-info {
   border: 5px solid var(--button-default);
   border-radius: 20px;
   padding: 10px;
+  margin-top: 40px;
+}
+
+.group-info p {
+  margin-left: 20px;
 }
 
 blockquote:before {
