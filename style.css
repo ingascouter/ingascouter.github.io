@@ -128,6 +128,7 @@ main h1 {
   font-family: Tondu;
   padding: 1rem;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 main h2 {
