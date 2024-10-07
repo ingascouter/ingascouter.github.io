@@ -209,9 +209,12 @@ blockquote:after {
 
 /* Lokaler */
 
+.locale {
+  display: flex;
+  flex-direction: row;
+}
+
 .locale img {
-  float: left;
-  width: 50%;
   padding: 10px;
   border-radius: 30px;
 }
