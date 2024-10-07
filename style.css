@@ -116,7 +116,6 @@ main {
 
 main a {
   color: var(--body-txt);
-  text-decoration: wavy underline;
 }
 
 main p {
@@ -130,8 +129,10 @@ main h1 {
 }
 
 main h2 {
-  margin: 0 1rem;
+  margin: 1rem 0;
 }
+
+/* Åldersgrupper */
 
 .group {
   transform: translateY(-80px);
@@ -192,7 +193,6 @@ blockquote:after {
 }
 
 .grupp {
-  font-family: Tondu;
   text-transform: uppercase;
   padding: 0;
   margin-bottom: 10px;
@@ -202,11 +202,11 @@ blockquote:after {
 
 .alder {
   color: var(--button-hover);
+  margin: 0;
 }
 
 /* ------------ Footer ------------ */
 footer {
-  margin-top: 30px;
   position: sticky;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -231,7 +231,6 @@ footer h1 {
   font-family: Bremen;
 }
 
-/* Footer links */
 footer a {
   color: white;
 }
@@ -273,6 +272,10 @@ footer a {
 
   .group-title {
     flex-direction: column;
+  }
+
+  .grupp {
+    color: unset;
   }
 
   .logo-container {
