@@ -78,6 +78,7 @@ li.dropdown {
   border-radius: 0 0 15px 15px;
   text-align: center;
   width: inherit;
+  z-index: 100;
 }
 
 .dropdown:hover .dropdown-content,
