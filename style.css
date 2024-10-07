@@ -214,9 +214,23 @@ blockquote:after {
   flex-direction: row;
 }
 
+.locale:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
 .locale img {
   padding: 10px;
   border-radius: 30px;
+}
+
+.locale h2 {
+  margin: 0;
+}
+
+.locale-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center
 }
 
 /* ------------ Footer ------------ */
