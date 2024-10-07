@@ -126,7 +126,7 @@ main p {
 
 main h1 {
   font-family: Tondu;
-  padding: 1rem;
+  margin-bottom: 1rem;
   letter-spacing: 1px;
   text-align: center;
 }
