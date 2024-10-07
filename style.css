@@ -207,6 +207,15 @@ blockquote:after {
   margin: 0;
 }
 
+/* Lokaler */
+
+.locale img {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-radius: 30px;
+}
+
 /* ------------ Footer ------------ */
 footer {
   position: sticky;
