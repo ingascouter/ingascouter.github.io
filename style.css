@@ -115,6 +115,8 @@ main {
   min-height: calc(100svh - 300px);
   line-height: 2rem;
   padding: 1rem 2rem;
+  margin: auto;
+  max-width: 1000px;
 }
 
 main a {
@@ -217,13 +219,12 @@ blockquote:after {
   grid-template-columns: auto auto;
   justify-items: center;
   gap: 25px;
-  margin: auto;
-  max-width: 1000px;
 }
 
 .sponsor img {
   width: 100%;
   height: auto;
+  border-radius: 30px;
 }
 
 /* Lokaler */
@@ -231,8 +232,6 @@ blockquote:after {
 .locale {
   display: flex;
   flex-direction: row-reverse;
-  margin: auto;
-  max-width: 1000px;
   margin-bottom: 2rem;
   justify-content: space-evenly;
 }
@@ -256,6 +255,10 @@ blockquote:after {
   flex-direction: column;
   justify-content: center;
   width: 400px;
+}
+
+.locale p {
+  margin: 0;
 }
 
 /* ------------ Footer ------------ */
