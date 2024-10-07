@@ -217,6 +217,8 @@ blockquote:after {
   grid-template-columns: auto auto;
   justify-items: center;
   gap: 25px;
+  margin: auto;
+  max-width: 1000px;
 }
 
 .sponsor img {
@@ -229,6 +231,8 @@ blockquote:after {
 .locale {
   display: flex;
   flex-direction: row-reverse;
+  margin: auto;
+  max-width: 1000px;
   margin-bottom: 2rem;
   justify-content: space-evenly;
 }
