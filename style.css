@@ -208,6 +208,13 @@ blockquote:after {
   margin: 0;
 }
 
+/* Sponsorer */
+
+.sponsors {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 /* Lokaler */
 
 .locale {
