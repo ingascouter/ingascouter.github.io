@@ -195,6 +195,7 @@ blockquote:after {
 
 /* ------------ Footer ------------ */
 footer {
+  margin-top: 30px;
   position: sticky;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -246,6 +247,7 @@ footer a {
   height: 120px;
 }
 
+/* ------------ Media Queries ------------ */
 
 @media (hover: none) {
   #navbar .dropdown {
