@@ -112,7 +112,7 @@ li:has(.active),
 main {
   min-height: calc(100svh - 300px);
   line-height: 2rem;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
 
 main a {
@@ -221,6 +221,7 @@ footer {
   text-align: center;
   background-color: var(--button-default);
   grid-template-areas: "logo-left footer-text logo-right";
+  margin-top: 4rem;
 }
 
 footer img {
@@ -267,10 +268,6 @@ footer a {
 }
 
 @media screen and (max-width: 770px) {
-  main {
-    margin: 0rem 2rem;
-  }
-
   .group-title {
     flex-direction: column;
   }
@@ -299,10 +296,6 @@ footer a {
 }
 
 @media screen and (max-width: 480px) {
-  main {
-    margin: 0 1rem;
-  }
-
   footer {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
