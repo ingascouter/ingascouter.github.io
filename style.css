@@ -211,16 +211,19 @@ blockquote:after {
 
 .locale {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+  margin-bottom: 2rem;
+  justify-content: space-evenly;
 }
 
 .locale:nth-child(2n) {
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .locale img {
   padding: 10px;
   border-radius: 30px;
+  height: 300px;
 }
 
 .locale h2 {
@@ -230,7 +233,8 @@ blockquote:after {
 .locale-info {
   display: flex;
   flex-direction: column;
-  justify-content: center
+  justify-content: center;
+  width: 400px;
 }
 
 /* ------------ Footer ------------ */
