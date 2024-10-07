@@ -116,6 +116,11 @@ main {
 
 main a {
   color: var(--body-txt);
+  text-decoration: wavy underline;
+}
+
+main p {
+  margin-bottom: 1rem;
 }
 
 main h1 {
