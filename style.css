@@ -121,6 +121,11 @@ main a {
 main h1 {
   font-family: Tondu;
   padding: 1rem;
+  letter-spacing: 1px;
+}
+
+main h2 {
+  margin: 0 1rem;
 }
 
 .group {
