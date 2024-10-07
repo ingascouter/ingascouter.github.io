@@ -80,7 +80,8 @@ li.dropdown {
   width: inherit;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown:focus .dropdown-content {
   display: block;
 }
 
@@ -261,11 +262,11 @@ footer a {
 
 /* ------------ Media Queries ------------ */
 
-@media (hover: none) {
+/* @media (hover: none) {
   #navbar .dropdown {
     display: none;
   }
-}
+} */
 
 @media screen and (max-width: 770px) {
   .group-title {
