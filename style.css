@@ -215,6 +215,12 @@ blockquote:after {
   display: grid;
   grid-template-columns: auto auto;
   justify-items: center;
+  gap: 25px;
+}
+
+.sponsor img {
+  width: 100%;
+  height: auto;
 }
 
 /* Lokaler */
