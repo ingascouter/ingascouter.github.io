@@ -213,6 +213,7 @@ blockquote:after {
 .sponsors {
   display: grid;
   grid-template-columns: auto auto;
+  justify-items: center;
 }
 
 /* Lokaler */
