@@ -233,6 +233,7 @@ blockquote:after {
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 
