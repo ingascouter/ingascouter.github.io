@@ -230,15 +230,14 @@ blockquote:after {
 /* Lokaler */
 
 .locale {
-  display: grid;
-  grid-template-columns: auto auto;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  flex-direction: row-reverse;
   margin-bottom: 2rem;
+  justify-content: space-evenly;
 }
 
-.locale:nth-child(2n) img {
-  order: 1;
+.locale:nth-child(2n) {
+  flex-direction: row;
 }
 
 .locale img {
