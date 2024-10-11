@@ -152,18 +152,18 @@ main h2 {
   align-items: center;
 }
 
-.group-info {
+.blue-bg {
   border-radius: 20px;
   padding: 20px;
   margin-top: 40px;
   background: var(--button-default);
 }
 
-.group-info * {
+.blue-bg * {
   color: white;
 }
 
-.group-info p {
+.blue-bg p {
   margin-left: 20px;
 }
 
