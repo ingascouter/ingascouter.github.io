@@ -128,14 +128,14 @@ main p {
 
 main h1 {
   font-family: Tondu;
-  margin-bottom: 1rem;
+  margin: 1rem 0 2rem;
   letter-spacing: 1px;
   text-align: center;
   font-size: 40px;
 }
 
 main h2 {
-  margin: 1rem 0;
+  margin: 2rem 0 .5rem;
 }
 
 /* Åldersgrupper */
