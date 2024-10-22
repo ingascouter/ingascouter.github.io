@@ -6,14 +6,14 @@ const darkModeToggle = document.querySelector('#theme-toggle');
 
 const enableDarkMode = () => {
   // 1. Add the class to the root
-  document.root.classList.add('darkmode');
+  document.documentElement.classList.add('darkmode');
   // 2. Update darkMode in localStorage
   localStorage.setItem('darkMode', 'enabled');
 }
 
 const disableDarkMode = () => {
   // 1. Remove the class from the root
-  document.root.classList.remove('darkmode');
+  document.documentElement.classList.remove('darkmode');
   // 2. Update darkMode in localStorage 
   localStorage.setItem('darkMode', 'disabled');
 }
