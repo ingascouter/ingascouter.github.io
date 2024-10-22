@@ -197,14 +197,16 @@ blockquote:after {
   height: 130px;
 }
 
-.grupp {
+h1.grupp {
   text-transform: uppercase;
   padding: 0;
   color: white;
   letter-spacing: 1px;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
-.alder {
+h2.alder {
   color: var(--button-hover);
   margin: 0;
 }
