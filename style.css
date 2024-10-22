@@ -22,17 +22,15 @@
   --button-default: #253765;
   --button-hover: #28a9e1;
   --font-primary: Arial, Helvetica, sans-serif;
+
+  background: var(--body-bg);
+  color: var(--body-txt);
+  font-family: var(--body-font);
 }
 
 .darkmode {
   --body-txt: white;
   --body-bg: black;
-}
-
-html {
-  background: var(--body-bg);
-  color: var(--body-txt);
-  font-family: var(--body-font);
 }
 
 /* ------------ Navbar ------------ */
