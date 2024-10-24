@@ -444,6 +444,7 @@ footer a {
   }
 
   a:after {
+    display: inline-block;
     content: " (" attr(href)")";
     font-style: italic;
   }
