@@ -1,9 +1,67 @@
 /* ------------ Setup ------------ */
-* {
-  margin: 0;
-  padding: 0;
+/* Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* Add accessible line-height */
+  line-height: 1.5;
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Import fonts */
 @font-face {
   font-family: Bremen;
   src: url(/assets/fonts/Bremen\ Bold.otf);
@@ -119,15 +177,6 @@ main {
   padding: 1rem 2rem;
   margin: auto;
   max-width: 1000px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
 }
 
 main a {
@@ -384,6 +433,14 @@ footer a {
 
   .logo-right {
     height: 80px;
+  }
+}
+
+@media print {
+
+  header,
+  footer {
+    display: none !important;
   }
 }
 
