@@ -442,6 +442,11 @@ footer a {
   footer {
     display: none !important;
   }
+
+  a:after {
+    content: ' ' attr(href);
+    font-style: italic;
+  }
 }
 
 
