@@ -443,8 +443,9 @@ footer a {
   }
 
   a:after {
-    content: ' ' attr(href);
+    content: "(" attr(href)")";
     font-style: italic;
+    text-decoration: none;
   }
 }
 
