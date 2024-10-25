@@ -274,7 +274,7 @@ h2.alder {
 
 /* Sponsorer */
 .card {
-  background: rgba((var(--body-txt)) .1);
+  background: rgba(var(--body-txt), .1);
   border-radius: 30px;
 }
 
