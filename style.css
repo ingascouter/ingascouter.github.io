@@ -73,21 +73,21 @@ h6 {
 
 /* Variables */
 :root {
-  --body-txt: black;
-  --body-bg: white;
+  --body-txt: 0, 0, 0;
+  --body-bg: 255, 255, 255;
   --body-font: Arial, Helvetica, sans-serif;
   --button-default: #253765;
   --button-hover: #28a9e1;
   --font-primary: Arial, Helvetica, sans-serif;
 
-  background: var(--body-bg);
-  color: var(--body-txt);
+  background: rgb(var(--body-bg));
+  color: rgb(var(--body-txt));
   font-family: var(--body-font);
 }
 
 .darkmode {
-  --body-txt: white;
-  --body-bg: black;
+  --body-txt: 255, 255, 255;
+  --body-bg: 0, 0, 0;
 }
 
 /* ------------ Navbar ------------ */
@@ -179,7 +179,7 @@ main {
 }
 
 main a {
-  color: var(--body-txt);
+  color: rgb(var(--body-txt));
 }
 
 main p {
@@ -274,7 +274,7 @@ h2.alder {
 
 /* Sponsorer */
 .card {
-  background: rgba((var(--body-bg)) 0.25);
+  background: rgba((var(--body-txt)) .1);
   border-radius: 30px;
 }
 
@@ -433,6 +433,6 @@ footer a {
 
 #scrolltotop:active,
 #scrolltotop:focus {
-  background: var(--body-bg);
-  color: var(--body-txt);
+  background: rgb(var(--body-bg));
+  color: rgb(var(--body-txt));
 }
