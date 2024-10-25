@@ -281,7 +281,7 @@ h2.alder {
 .card {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: .5 rem;
   background: rgba(var(--body-txt), .1);
   border-radius: 30px;
   padding: 1rem;
@@ -302,11 +302,6 @@ h2.alder {
 .card p {
   line-height: 1.5;
   opacity: 0.8;
-}
-
-.card a {
-  margin-top: 0.5rem;
-  display: inline-block;
 }
 
 /* ------------ Footer ------------ */
