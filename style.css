@@ -208,17 +208,13 @@ main>h2 {
 }
 
 /* Åldersgrupper */
-.group {
-  transform: translateY(-95px);
-  margin-bottom: -95px;
-}
-
 .group-title {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
+  transform: translateY(-95px);
+  margin-bottom: calc(2rem - 95px);
 }
 
 .blue-bg {
