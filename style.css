@@ -178,7 +178,7 @@ main {
   max-width: 1000px;
 }
 
-main>a {
+main a {
   color: rgb(var(--body-txt));
 }
 
