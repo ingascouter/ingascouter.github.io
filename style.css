@@ -259,6 +259,7 @@ blockquote:after {
 }
 
 h1.grupp {
+  font-family: Tondu;
   text-transform: uppercase;
   padding: 0;
   color: white;
