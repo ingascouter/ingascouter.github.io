@@ -173,9 +173,9 @@ li:has(.active),
 main {
   min-height: calc(100svh - 375px);
   line-height: 2rem;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   margin: auto;
-  max-width: 1000px;
+  max-width: 900px;
 }
 
 main a {
@@ -209,12 +209,12 @@ main>h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .blue-bg {
   border-radius: 20px;
   padding: 20px;
-  margin-top: 40px;
   background: var(--button-default);
 }
 
