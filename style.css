@@ -178,15 +178,15 @@ main {
   max-width: 1000px;
 }
 
-main a {
+main>a {
   color: rgb(var(--body-txt));
 }
 
-main p {
+main>p {
   margin-bottom: 1rem;
 }
 
-main h1 {
+main>h1 {
   font-family: Tondu;
   margin: 1rem 0 2rem;
   letter-spacing: 1px;
@@ -194,7 +194,7 @@ main h1 {
   font-size: 40px;
 }
 
-main h2 {
+main>h2 {
   margin: 2rem 0 .5rem;
 }
 
@@ -263,13 +263,11 @@ h1.grupp {
   padding: 0;
   color: white;
   letter-spacing: 1px;
-  margin: 0;
   margin-bottom: 1rem;
 }
 
 h2.alder {
   color: var(--button-hover);
-  margin: 0;
 }
 
 /* Sponsorer & lokaler*/
@@ -383,7 +381,6 @@ footer a {
   }
 
   .logo-container {
-    margin: 0;
     margin-bottom: 20px;
   }
 
