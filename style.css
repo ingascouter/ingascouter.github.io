@@ -213,8 +213,8 @@ main>h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-95px);
-  margin-bottom: calc(2rem - 95px);
+  transform: translateY(-100px);
+  margin-bottom: calc(2rem - 100px);
 }
 
 .blue-bg {
