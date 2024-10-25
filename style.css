@@ -199,7 +199,6 @@ main h2 {
 }
 
 /* Åldersgrupper */
-
 .group {
   transform: translateY(-95px);
   margin-bottom: -95px;
@@ -274,54 +273,16 @@ h2.alder {
 }
 
 /* Sponsorer */
-
-.sponsors {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-items: center;
-  gap: 25px;
-}
-
-.sponsor img {
-  width: 100%;
-  height: auto;
+.card {
+  background: rgba((var(--body-bg)) 0.25);
   border-radius: 30px;
 }
+
+/* redo asap */
 
 /* Lokaler */
 
-.locale {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: 2rem;
-  justify-content: space-evenly;
-}
-
-.locale:nth-child(2n) {
-  flex-direction: row;
-}
-
-.locale img {
-  padding: 10px;
-  border-radius: 30px;
-  max-width: 40svw;
-  height: 100%;
-}
-
-.locale h2 {
-  margin: 0;
-}
-
-.locale-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 40svw;
-}
-
-.locale p {
-  margin: 0;
-}
+/* redo asap */
 
 /* ------------ Footer ------------ */
 footer {
