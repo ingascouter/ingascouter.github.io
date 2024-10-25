@@ -321,6 +321,10 @@ h2.alder {
   opacity: 0.8;
 }
 
+.square-img{
+  aspect-ratio: 1;
+}
+
 /* ------------ Footer ------------ */
 footer {
   position: sticky;
