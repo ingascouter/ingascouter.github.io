@@ -260,6 +260,7 @@ blockquote:after {
 
 h1.grupp {
   font-family: Tondu;
+  font-size: 40px;
   text-transform: uppercase;
   padding: 0;
   color: white;
