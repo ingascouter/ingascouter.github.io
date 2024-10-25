@@ -111,6 +111,10 @@ h6 {
   border-radius: 0 0 25px 25px;
 }
 
+#navbar li:has(a:has(img)) {
+  border-radius: 25px;
+}
+
 #navbar a {
   display: inline-block;
   color: white;
