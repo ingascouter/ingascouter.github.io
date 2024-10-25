@@ -288,24 +288,27 @@ h2.alder {
   display: flex;
   flex-direction: column;
   gap: .5rem;
-  background: rgba(var(--body-txt), .1);
+  background: rgba(var(--body-txt), .15);
   border-radius: 30px;
-  padding: 1rem;
+  overflow: hidden;
 }
 
 .card img {
   width: 100%;
   height: auto;
-  border-radius: 1rem;
   aspect-ratio: 16/9;
   object-fit: cover;
 }
 
-.card h2 {
+.card-info {
+  padding: 1rem;
+}
+
+.card-info h2 {
   font-size: 1.5rem;
 }
 
-.card p {
+.card-info p {
   line-height: 1.5;
   opacity: 0.8;
 }
