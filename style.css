@@ -278,6 +278,10 @@ h2.alder {
   margin: 0 auto;
 }
 
+.single-column {
+  grid-template-columns: 1fr;
+}
+
 .card {
   display: flex;
   flex-direction: column;
