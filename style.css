@@ -286,7 +286,7 @@ h2.alder {
 .card {
   display: flex;
   flex-direction: column;
-  gap: .5 rem;
+  gap: .5rem;
   background: rgba(var(--body-txt), .1);
   border-radius: 30px;
   padding: 1rem;
