@@ -108,6 +108,7 @@ h6 {
 #navbar li {
   float: left;
   cursor: pointer;
+  border-radius: 0 0 25px 25px;
 }
 
 #navbar a {
@@ -300,7 +301,7 @@ h2.alder {
 }
 
 .card-info {
-  padding: 1rem;
+  padding: .5rem 1rem 1rem;
 }
 
 .card-info h2 {
