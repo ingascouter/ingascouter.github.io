@@ -387,12 +387,13 @@ footer a {
     flex-direction: column;
   }
 
-  .grupp {
+  h1.grupp {
     color: unset;
   }
 
   .logo-container {
-    margin-bottom: 20px;
+    margin: 0;
+    margin-bottom: 2rem;
   }
 
   div:has(.grupp) {
