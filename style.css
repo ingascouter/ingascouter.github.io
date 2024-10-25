@@ -272,17 +272,45 @@ h2.alder {
   margin: 0;
 }
 
-/* Sponsorer */
-.card {
-  background: rgba(var(--body-txt), .1);
-  border-radius: 30px;
+/* Sponsorer & lokaler*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* redo asap */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: rgba(var(--body-txt), .25);
+  border-radius: 30px;
+  padding: 1rem;
+}
 
-/* Lokaler */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
 
-/* redo asap */
+.card h2 {
+  font-size: 1.5rem;
+}
+
+.card p {
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.card a {
+  margin-top: 0.5rem;
+  display: inline-block;
+}
 
 /* ------------ Footer ------------ */
 footer {
