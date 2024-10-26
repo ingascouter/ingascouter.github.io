@@ -72,3 +72,9 @@ window.onload = function () {
 function topFunction() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+// Copy code to webshop
+function webshopCode() {
+  navigator.clipboard.writeText('IngåScouter2022');
+  alert("Klistra in koden som kopierades på följande sida för att komma åt webshoppen");
+}
