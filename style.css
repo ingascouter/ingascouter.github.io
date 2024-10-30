@@ -320,6 +320,10 @@ a.active {
     position: static;
   }
 
+  #mobile-menu-toggle:checked+main {
+    display: none;
+  }
+
   #mobile-menu-toggle:checked~.nav-links {
     top: 55px;
   }
