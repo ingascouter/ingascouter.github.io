@@ -187,7 +187,7 @@ nav a {
   transform: translateY(-30%) rotate(225deg);
 }
 
-nav label:has(li:focus-within),
+.dropdown:focus-within label,
 .nav-right li:hover,
 .logo:hover,
 li:has(li .active) {
@@ -195,11 +195,11 @@ li:has(li .active) {
 }
 
 a.active {
-  text-decoration: white wavy underline;
+  text-decoration: underline;
 }
 
-.dropdown-content a:hover:not(.active) {
-  text-decoration: white underline;
+.dropdown-content a:hover {
+  text-decoration: wavy underline;
 }
 
 .dropdown-content {
@@ -242,10 +242,6 @@ a.active {
   .dropdown:hover .dd-btn::after,
   .dropdown:focus-within .dd-btn::after {
     transform: translateY(-30%) rotate(225deg);
-  }
-
-  nav li:focus-within:has(li) {
-    background: var(--nav-hover);
   }
 
   .logo.active {
