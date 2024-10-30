@@ -80,8 +80,8 @@ h6 {
   --button-default: #253765;
   --button-hover: #28a9e1;
   --font-primary: Arial, Helvetica, sans-serif;
-  --nav-clr: #333;
-  --nav-hover: #444;
+  --nav-clr: var(--button-default);
+  --nav-hover: var(--button-hover);
 
   background: rgb(var(--body-bg));
   color: rgb(var(--body-txt));
