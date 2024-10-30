@@ -187,19 +187,18 @@ nav a {
   transform: translateY(-30%) rotate(225deg);
 }
 
-nav li:hover,
+nav a:hover,
 .logo:hover,
-li:has(li .active) {
+a.active {
   background: var(--nav-hover);
-}
-
-.dropdown-content li:hover:not(.active) {
-  text-decoration: white underline;
-  background: unset;
 }
 
 a.active {
   text-decoration: white wavy underline;
+}
+
+.dropdown-content a:hover:not(.active) {
+  text-decoration: white underline;
 }
 
 .dropdown-content {
