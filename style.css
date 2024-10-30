@@ -72,6 +72,12 @@ h6 {
   src: url(/assets/fonts/Tondu_Beta.ttf);
 }
 
+/* Experimental */
+/* https://caniuse.com/mdn-css_at-rules_view-transition */
+@view-transition {
+  navigation: auto;
+}
+
 /* Variables */
 :root {
   --body-txt: 0, 0, 0;
