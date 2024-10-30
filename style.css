@@ -188,7 +188,7 @@ nav a {
 }
 
 .dropdown:focus-within label,
-.nav-right li:hover,
+.nav-links>li:hover,
 .logo:hover,
 li:has(li .active) {
   background: var(--nav-hover);
