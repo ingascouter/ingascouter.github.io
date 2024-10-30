@@ -193,7 +193,7 @@ li:has(li .active) {
   background: var(--nav-hover);
 }
 
-.dropdown-content a:hover {
+.dropdown-content li:hover {
   text-decoration: white line;
   background: unset;
 }
@@ -424,12 +424,12 @@ blockquote:before {
   content: open-quote;
 }
 
-blockquote:after {
+blockquote::after {
   content: close-quote;
 }
 
-blockquote:before,
-blockquote:after {
+blockquote::before,
+blockquote::after {
   display: inline-block;
   vertical-align: bottom;
   font-size: 4em;
@@ -630,9 +630,9 @@ footer a {
     display: none;
   }
 
-  a:after {
+  a::after {
     display: inline-block;
-    content: " (" attr(href)")";
+    content: "\00A0(" attr(href)")";
     font-style: italic;
   }
 }
