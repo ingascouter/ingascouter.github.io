@@ -194,7 +194,7 @@ li:has(li .active) {
 }
 
 .dropdown-content li:hover {
-  text-decoration: white line;
+  text-decoration: white underline;
   background: unset;
 }
 
