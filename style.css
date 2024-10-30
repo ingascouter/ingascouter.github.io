@@ -187,8 +187,8 @@ nav a {
   transform: translateY(-30%) rotate(225deg);
 }
 
-nav li>a:hover,
-nav li>label:hover,
+nav li>label:focus-within,
+.nav-right li:hover,
 .logo:hover,
 li:has(li .active) {
   background: var(--nav-hover);
