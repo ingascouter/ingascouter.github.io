@@ -9,6 +9,7 @@
 /* Remove default margin */
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -93,17 +94,6 @@ h6 {
 }
 
 /* ------------ Navbar ------------ */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --nav-clr: #333;
-  --nav-hover: #444;
-}
-
 nav {
   background: var(--nav-clr);
   position: fixed;
@@ -114,6 +104,7 @@ nav {
   align-items: center;
   z-index: 999;
   font-family: Arial, sans-serif;
+  transition: top 0.4s;
 }
 
 nav li {
