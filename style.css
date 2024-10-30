@@ -127,6 +127,7 @@ nav a>img {
   width: 40px;
   height: 40px;
   display: block;
+  max-width: unset;
 }
 
 .nav-links {
