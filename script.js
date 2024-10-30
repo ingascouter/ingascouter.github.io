@@ -49,9 +49,9 @@ window.onscroll = function () {
   var currentScrollPos = window.scrollY;
   // Navbar hide/show functionality
   if (prevScrollpos > currentScrollPos) {
-    document.header.style.top = "0";
+    document.getElementById("navbar").style.top = "0";
   } else {
-    document.header.style.top = "-55px";
+    document.getElementById("navbar").style.top = "-55px";
   }
   prevScrollpos = currentScrollPos;
 
