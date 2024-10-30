@@ -93,6 +93,17 @@ h6 {
 }
 
 /* ------------ Navbar ------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --nav-clr: #333;
+  --nav-hover: #444;
+}
+
 nav {
   background: var(--nav-clr);
   position: fixed;
@@ -288,6 +299,11 @@ a.active {
   display: none;
 }
 
+#theme-toggle a {
+  line-height: 0;
+  padding: 19.5px;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -344,10 +360,6 @@ a.active {
   }
 }
 
-#theme-toggle a {
-  line-height: 0;
-  padding: 19.5px;
-}
 
 /* ------------ Main ------------ */
 .banner {
