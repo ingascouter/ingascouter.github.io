@@ -193,8 +193,9 @@ li:has(li .active) {
   background: var(--nav-hover);
 }
 
-.dropdown-content li:hover {
+.dropdown-content a:hover {
   text-decoration: white line;
+  background: unset;
 }
 
 a.active {
