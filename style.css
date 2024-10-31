@@ -187,7 +187,6 @@ nav a {
   transform: translateY(-30%) rotate(225deg);
 }
 
-.dropdown:focus-within label,
 .nav-links>li:hover,
 .nav-right>li:hover,
 .logo:hover,
