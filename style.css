@@ -194,12 +194,12 @@ li:has(li .active) {
   background: var(--nav-hover);
 }
 
-a.active {
-  text-decoration: underline;
-}
-
 .dropdown-content a:hover {
   text-decoration: wavy underline;
+}
+
+.dropdown-content a.active {
+  text-decoration: underline;
 }
 
 .dropdown-content {
