@@ -48,7 +48,14 @@ let mybutton = document.getElementById("scrolltotop");
 window.onscroll = function () {
   var currentScrollPos = window.scrollY;
   // Navbar hide/show functionality
-  if (prevScrollpos > currentScrollPos && (document.getElementById("mobile-menu-toggle").checked === false)) {
+  var mobileMenuOpen = document.getElementById("mobile-menu-toggle").checked;
+
+  // Don't hide navbar if mobile menu is open
+  if (mobileMenuOpen) {
+    document.getElementById("navbar").style.top = "0";
+  }
+  // Otherwise, handle normal scroll behavior
+  else if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
     document.getElementById("navbar").style.top = "-55px";
