@@ -187,10 +187,6 @@ nav a {
   transform: translateY(-30%) rotate(225deg);
 }
 
-a.active {
-  text-decoration: underline;
-}
-
 .dropdown:focus-within label,
 .nav-links>li:hover,
 .nav-right>li:hover,
@@ -199,14 +195,11 @@ li:has(li .active) {
   background: var(--nav-hover);
 }
 
-.nav-links>li:focus,
-.nav-right>li:focus,
-.logo:focus,
-li:has(li .active) {
-  background: var(--nav-hover);
+a.active {
+  text-decoration: underline;
 }
 
-.dropdown-content a:focus {
+.dropdown-content a:hover {
   text-decoration: wavy underline;
 }
 
