@@ -187,8 +187,6 @@ nav a {
   transform: translateY(-30%) rotate(225deg);
 }
 
-.nav-right>li:hover,
-.logo:hover,
 li:has(li .active) {
   background: var(--nav-hover);
 }
@@ -252,7 +250,9 @@ li:has(li .active) {
   }
 
   .logo.active,
-  .nav-links>li:hover {
+  .nav-links>li:hover,
+  .nav-right>li:hover,
+  .logo:hover {
     background: var(--nav-hover);
   }
 }
