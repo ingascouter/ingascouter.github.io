@@ -223,6 +223,14 @@ a.active {
   -webkit-user-drag: none;
 }
 
+#theme-toggle button {
+  line-height: 0;
+  padding: 19.5px;
+  background: unset;
+  color: white;
+  border: none;
+}
+
 /* Desktop nav */
 @media (hover: hover) {
 
@@ -258,12 +266,6 @@ a.active {
   justify-content: right;
   width: 100%;
   background: var(--nav-clr);
-}
-
-.nav-right a {
-  color: white;
-  user-select: none;
-  -webkit-user-drag: none;
 }
 
 .hamburger {
