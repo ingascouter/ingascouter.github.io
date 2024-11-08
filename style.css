@@ -192,7 +192,8 @@ li:has(li .active) {
 }
 
 .dropdown-content a:hover {
-  text-decoration: wavy underline;
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
 }
 
 .dropdown-content a.active {
