@@ -273,6 +273,7 @@ li:has(li .active) {
   cursor: pointer;
   padding: 13px 15px;
   user-select: none;
+  background: var(--nav-clr);
 }
 
 .hamburger span {
