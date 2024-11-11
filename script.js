@@ -55,9 +55,9 @@ window.onscroll = function () {
     document.getElementById("navbar").style.top = "0";
   }
   // Otherwise, handle normal scroll behavior
-  else if (currentScrollPos > prevScrollPos + 200 && currentScrollPos > 0) {
+  else if (currentScrollPos > prevScrollPos && currentScrollPos > 0) {
     document.getElementById("navbar").style.top = "-55px";
-  } else if (prevScrollPos > currentScrollPos) {
+  } else {
     document.getElementById("navbar").style.top = "0";
   }
   prevScrollPos = currentScrollPos;
