@@ -40,7 +40,7 @@ darkModeToggle.addEventListener('click', () => {
 
 
 // Hide navbar on scroll
-var prevScrollpos = window.scrollY;
+var prevScrollPos = window.scrollY;
 
 // Show button to scroll to top when user scrolls down x amount
 let mybutton = document.getElementById("scrolltotop");
