@@ -55,12 +55,12 @@ window.onscroll = function () {
     document.getElementById("navbar").style.top = "0";
   }
   // Otherwise, handle normal scroll behavior
-  else if (prevScrollpos > currentScrollPos && currentScrollPos > 10) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
+  else if (currentScrollPos > prevScrollPos && currentScrollPos > 10) {
     document.getElementById("navbar").style.top = "-55px";
+  } else {
+    document.getElementById("navbar").style.top = "0";
   }
-  prevScrollpos = currentScrollPos;
+  prevScrollPos = currentScrollPos;
 
   // Scroll to top button functionality
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
