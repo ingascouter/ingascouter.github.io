@@ -377,7 +377,11 @@ main {
 }
 
 main a {
-  color: rgb(var(--body-txt));
+  color: var(--button-hover);
+}
+
+main a:hover {
+  color: var(--button-default);
 }
 
 main>p {
