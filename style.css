@@ -229,7 +229,7 @@ li:has(li .active) {
 }
 
 /* Desktop nav */
-@media (hover: hover) {
+@media (hover: hover) and (min-width: 770px) {
 
   .dropdown:hover .dropdown-content,
   .dropdown:focus-within .dropdown-content {
