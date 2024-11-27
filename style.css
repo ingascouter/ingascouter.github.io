@@ -295,7 +295,8 @@ li:has(li .active) {
   padding: 19.5px;
 }
 
-@media (hover: none) {
+@media (hover: none),
+(max-width: 770px) {
   .hamburger {
     display: block;
     z-index: 999;
