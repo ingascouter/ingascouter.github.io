@@ -371,7 +371,7 @@ li:has(li .active) {
 main {
   min-height: calc(100svh - 375px);
   line-height: 2rem;
-  padding: 1rem 3rem;
+  padding: 1rem;
   margin: auto;
   max-width: 900px;
 }
