@@ -576,8 +576,7 @@ footer a {
   }
 } */
 
-@media print,
-(max-width: 770px) {
+@media screen and (max-width: 770px) {
   .group-title {
     flex-direction: column;
   }
@@ -605,7 +604,8 @@ footer a {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media print,
+(max-width: 480px) {
   footer {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
