@@ -183,10 +183,6 @@ nav a {
   transition: transform 0.3s ease;
 }
 
-.dropdown input[type="checkbox"]:checked~.dd-btn::after {
-  transform: translateY(-30%) rotate(225deg);
-}
-
 li:has(li .active) {
   background: var(--nav-hover);
 }
@@ -357,6 +353,10 @@ li:has(li .active) {
 
   .dropdown input[type="checkbox"]:checked~label {
     background: var(--nav-hover);
+  }
+
+  .dropdown input[type="checkbox"]:checked~.dd-btn::after {
+    transform: translateY(-30%) rotate(225deg);
   }
 }
 
