@@ -228,7 +228,7 @@ li:has(li .active) {
 @media (hover: hover) and (min-width: 770px) {
 
   .dropdown:hover .dropdown-content,
-  .dropdown:focus-within .dropdown-content {
+  .dropdown .dropdown-content:focus-within {
     display: grid;
     grid-template-rows: 1fr;
   }
