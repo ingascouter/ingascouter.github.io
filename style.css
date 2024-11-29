@@ -633,7 +633,7 @@ footer a {
   header,
   footer,
   #scrolltotop {
-    display: none;
+    display: none !important;
   }
 
   a::after {
