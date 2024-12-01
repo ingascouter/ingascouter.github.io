@@ -89,6 +89,7 @@ h6 {
   --nav-clr: var(--button-default);
   --nav-hover: var(--button-hover);
 
+  transition: all .5s linear;
   background: rgb(var(--body-bg));
   color: rgb(var(--body-txt));
   font-family: var(--body-font);
