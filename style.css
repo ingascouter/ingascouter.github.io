@@ -90,7 +90,7 @@ h6 {
   --nav-hover: var(--button-hover);
 
   transition: all .5s linear;
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   font-family: var(--body-font);
 }
 
