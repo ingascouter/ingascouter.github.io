@@ -90,14 +90,18 @@ h6 {
   --nav-hover: var(--button-hover);
 
   transition: all .5s linear;
-  background: rgb(var(--body-bg));
-  color: rgb(var(--body-txt));
+  color-scheme: light dark;
   font-family: var(--body-font);
 }
 
 .darkmode {
   --body-txt: 255, 255, 255;
   --body-bg: 0, 0, 0;
+  color-scheme: dark;
+}
+
+.lightmode {
+  color-scheme: light;
 }
 
 /* ------------ Navbar ------------ */
