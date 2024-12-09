@@ -97,11 +97,11 @@ h6 {
 .darkmode {
   --body-txt: 255, 255, 255;
   --body-bg: 0, 0, 0;
-  color-scheme: dark;
+  color-scheme: only dark;
 }
 
 .lightmode {
-  color-scheme: light;
+  color-scheme: only light;
 }
 
 /* ------------ Navbar ------------ */
