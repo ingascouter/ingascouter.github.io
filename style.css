@@ -387,11 +387,11 @@ main * {
 }
 
 main a {
-  color: light-dark(var(--button-hover),var(--button-default));
+  color: var(--button-hover); text-decoration: none;
 }
 
 main a:hover {
-color: light-dark(var(--button-default),var(--button-hover));
+text-decoration: underline;
 }
 
 main>p {
