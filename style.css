@@ -387,11 +387,11 @@ main * {
 }
 
 main a {
-  color: var(--button-hover);
+  color: light-dark(var(--button-hover),var(--button-default));
 }
 
 main a:hover {
-  color: var(--button-default);
+color: light-dark(var(--button-default),var(--button-hover));
 }
 
 main>p {
