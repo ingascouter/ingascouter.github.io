@@ -92,16 +92,20 @@ h6 {
   transition: all .5s linear;
   /* color-scheme: light dark; */
   font-family: var(--body-font);
+  background: var(--button-default);
 }
 
 .darkmode {
-  --body-txt: 255, 255, 255;
-  --body-bg: 0, 0, 0;
   color-scheme: only dark;
 }
 
 .lightmode {
   color-scheme: only light;
+}
+
+body {
+  background: light-dark(rgb(var(--body-bg)), rgb(var(--body-txt)));
+  color: light-dark(rgb(var(--body-txt)), rgb(var(--body-bg)));
 }
 
 /* ------------ Navbar ------------ */
@@ -391,7 +395,7 @@ main a {
 }
 
 main a:hover {
-text-decoration: none;
+  text-decoration: none;
 }
 
 main>p {
@@ -641,13 +645,19 @@ footer a {
 
   header,
   footer,
+  .banner,
   #scrolltotop {
     display: none !important;
   }
 
+  a {
+    color: black !important;
+  }
+
   a::after {
     display: inline-block;
-    content: "\00A0(" attr(href)")";
+    content: "\00A0[" attr(href) "]";
+    color: gray;
     font-style: italic;
   }
 }
@@ -675,5 +685,5 @@ footer a {
 #scrolltotop:active,
 #scrolltotop:focus {
   background: rgb(var(--body-bg));
-  color: rgb(var(--body-txt));
+  color: var(--button-hover);
 }
