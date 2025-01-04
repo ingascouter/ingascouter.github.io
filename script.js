@@ -1,43 +1,38 @@
-// Darkmode
-// check for saved 'darkMode' in localStorage
-let darkMode = localStorage.getItem('darkMode');
+// Check for saved dark mode preference in localStorage
+const savedTheme = localStorage.getItem('theme');
+// If none, check browser theme preference
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-const darkModeToggle = document.querySelector('#theme-toggle');
-
-const enableDarkMode = () => {
-  // 1. Add the class to the root
-  document.documentElement.classList.add('darkmode');
-  // 2. Update darkMode in localStorage
-  localStorage.setItem('darkMode', 'enabled');
-}
-
-const disableDarkMode = () => {
-  // 1. Remove the class from the root
-  document.documentElement.classList.remove('darkmode');
-  // 2. Update darkMode in localStorage 
-  localStorage.setItem('darkMode', 'disabled');
-}
-
-// If the user already visited and enabled darkMode
-// start things off with it on
-if (darkMode === 'enabled') {
+if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme)) {
   enableDarkMode();
+} else {
+  disableDarkMode();
 }
 
-// When someone clicks the button
-darkModeToggle.addEventListener('click', () => {
-  // get their darkMode setting
-  darkMode = localStorage.getItem('darkMode');
+// Function to enable dark mode
+function enableDarkMode() {
+  // Set body "color scheme" style to "only dark"
+  document.body.style.colorScheme = 'dark';
+  // Set localStorage to dark
+  localStorage.setItem('theme', 'dark');
+}
 
-  // if it not currently enabled, enable it
-  if (darkMode !== 'enabled') {
-    enableDarkMode();
-    // if it has been enabled, turn it off  
-  } else {
+// Function to disable dark mode
+function disableDarkMode() {
+  // Set body "color scheme" style to "only light"
+  document.body.style.colorScheme = 'light';
+  // Set localStorage to light
+  localStorage.setItem('theme', 'light');
+}
+
+// Toggle dark mode function, called by button click, default to dark as page is light by default
+function toggleDarkMode() {
+  if (document.body.style.colorScheme === 'dark') {
     disableDarkMode();
+  } else {
+    enableDarkMode();
   }
-});
-
+}
 
 // Hide navbar on scroll
 var prevScrollPos = window.scrollY;
