@@ -80,12 +80,12 @@ h6 {
 
 /* Variables */
 :root {
-  --body-txt: 0, 0, 0;
-  --body-bg: 255, 255, 255;
+  --body-txt: hsl(0, 0%, 0%);
+  --body-bg: hsl(0, 0%, 100%);
+  --body-alt: light-dark(hsl(0, 0%, 90%), hsl(0, 0%, 10%));
   --body-font: Arial, Helvetica, sans-serif;
-  --button-default: #253765;
-  --button-hover: #28a9e1;
-  --font-primary: Arial, Helvetica, sans-serif;
+  --button-default: hsl(223, 46%, 27%);
+  --button-hover: hsl(198, 76%, 52%);
   --nav-clr: var(--button-default);
   --nav-hover: var(--button-hover);
 
@@ -104,8 +104,8 @@ h6 {
 }
 
 body {
-  background: light-dark(rgb(var(--body-bg)), rgb(var(--body-txt)));
-  color: light-dark(rgb(var(--body-txt)), rgb(var(--body-bg)));
+  background: light-dark(var(--body-bg), var(--body-txt));
+  color: light-dark(var(--body-txt), var(--body-bg));
 }
 
 /* ------------ Navbar ------------ */
@@ -499,7 +499,7 @@ h2.alder {
 .card {
   display: flex;
   flex-direction: column;
-  background: rgba(var(--body-txt), .15);
+  background: var(--body-alt);
   border-radius: 30px;
   overflow: hidden;
 }
@@ -536,7 +536,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   justify-items: center;
-  font-family: var(--font-primary);
+  font-family: var(--body-font);
   color: white;
   text-decoration: none;
   padding: 25px;
@@ -582,13 +582,6 @@ footer a {
 }
 
 /* ------------ Media Queries ------------ */
-
-/* @media (hover: none) {
-  #navbar .dropdown {
-    display: none;
-  }
-} */
-
 @media screen and (max-width: 770px) {
   .group-title {
     flex-direction: column;
@@ -684,6 +677,6 @@ footer a {
 
 #scrolltotop:active,
 #scrolltotop:focus {
-  background: rgb(var(--body-bg));
+  background: var(--body-bg);
   color: var(--button-hover);
 }
