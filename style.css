@@ -382,7 +382,7 @@ main * {
   padding: revert;
 }
 
-main a {
+main a:link {
   color: var(--button-hover);
 }
 
@@ -400,10 +400,17 @@ main>h1 {
   letter-spacing: 1px;
   text-align: center;
   font-size: 40px;
+  text-decoration: underline;
 }
 
 main>h2 {
   margin: 2rem 0 .5rem;
+}
+
+.updated {
+  background: var(--body-alt);
+  padding: 5px 8px;
+  border-radius: 16px;
 }
 
 /* Åldersgrupper */
