@@ -409,7 +409,7 @@ main>h2 {
 
 .updated {
   background: var(--body-alt);
-  padding: 5px 8px;
+  padding: 0 8px;
   border-radius: 16px;
   font-size: small;
   font-weight: bold;
