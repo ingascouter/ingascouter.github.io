@@ -414,6 +414,7 @@ main>h2 {
   font-size: small;
   font-weight: bold;
   color: light-dark(hsl(0, 0%, 25%), hsl(0, 0%, 85%));
+  float: right;
 }
 
 /* Åldersgrupper */
