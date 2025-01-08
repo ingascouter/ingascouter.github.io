@@ -424,12 +424,13 @@ main>h2 {
   justify-content: center;
   align-items: center;
   transform: translateY(-100px);
-  margin-bottom: calc(2rem - 100px);
+  margin-bottom: -100px;
 }
 
 .blue-bg {
   border-radius: 20px;
   padding: 20px;
+  margin: 2rem 0;
   background: var(--button-default);
 }
 
