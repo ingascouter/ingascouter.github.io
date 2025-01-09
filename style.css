@@ -90,6 +90,7 @@ h6 {
   --nav-hover: var(--button-hover);
   font-family: var(--body-font);
   background: var(--button-default);
+  scroll-behavior: smooth;
 }
 
 body {
