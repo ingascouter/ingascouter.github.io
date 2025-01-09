@@ -279,6 +279,7 @@ li:has(li .active) {
   margin: 5px 0;
   transition: 0.3s;
   user-select: none;
+  border-radius: 2px;
 }
 
 #mobile-menu-toggle {
