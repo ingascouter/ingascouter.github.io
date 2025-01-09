@@ -80,8 +80,8 @@ h6 {
 
 /* Variables */
 :root {
-  --body-txt: light-dark(white, black);
-  --body-bg: light-dark(black, white);
+  --body-txt: light-dark(black, white);
+  --body-bg: light-dark(white, black);
   --body-alt: light-dark(hsl(0, 0%, 90%), hsl(0, 0%, 10%));
   --body-font: Arial, Helvetica, sans-serif;
   --button-default: hsl(223, 46%, 27%);
