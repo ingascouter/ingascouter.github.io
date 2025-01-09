@@ -160,6 +160,7 @@ nav a {
   user-select: none;
   -webkit-user-drag: none;
   text-decoration: none;
+  text-wrap: balance;
 }
 
 /* Arrow indicator for dropdowns */
