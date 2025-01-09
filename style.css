@@ -97,7 +97,6 @@ body {
   transition: all .5s linear;
   background: var(--body-bg);
   color: var(--body-txt);
-  color-scheme: light dark;
 }
 
 /* ------------ Navbar ------------ */
