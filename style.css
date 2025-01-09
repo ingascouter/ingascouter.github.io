@@ -219,10 +219,23 @@ li:has(li .active) {
 
 #theme-toggle button {
   line-height: 0;
-  padding: 19.5px;
+  padding: 0;
   background: unset;
   color: white;
   border: none;
+}
+
+#theme-toggle i {
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  font-size: 20px;
+}
+
+#theme-toggle i.hidden {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+  padding: 0 !important;
 }
 
 /* Desktop nav */
