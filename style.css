@@ -80,16 +80,14 @@ h6 {
 
 /* Variables */
 :root {
-  --body-txt: hsl(0, 0%, 0%);
-  --body-bg: hsl(0, 0%, 100%);
+  --body-txt: light-dark(white, black);
+  --body-bg: light-dark(black, white);
   --body-alt: light-dark(hsl(0, 0%, 90%), hsl(0, 0%, 10%));
   --body-font: Arial, Helvetica, sans-serif;
   --button-default: hsl(223, 46%, 27%);
   --button-hover: hsl(198, 76%, 52%);
   --nav-clr: var(--button-default);
   --nav-hover: var(--button-hover);
-
-  /* color-scheme: light dark; */
   font-family: var(--body-font);
   background: var(--button-default);
 }
@@ -420,7 +418,7 @@ main>h2 {
 .updated::before {
   content: "\2713";
   margin-right: 1ch;
-  border: 1px solid var(--body-bg);
+  border: 1px solid var(--body-txt);
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
