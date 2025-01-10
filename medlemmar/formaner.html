@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="sv" style="color-scheme: light dark;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Förmåner | Ingå Scouter</title>
+    <meta name="description"
+        content="Ingå Scouter är den enda svenskspråkiga scoutkåren i Ingå som erbjuder aktiviteter för alla åldrar, inklusive veckomöten, hajker och läger. Vår vision är att främja hållbarhet, ledarskap och gemenskap för en bättre framtid för unga. Vad väntar du på, kom med!">
+    <meta name="google-site-verification" content="rvQN7JhabC6CPRHKQWMJRWm85ET5_6Hq2-J13GZFICs" />
+    <link type="image/x-icon" href="/assets/icons/logo.ico" rel="icon" media="(prefers-color-scheme: light)" />
+    <link type="image/x-icon" href="/assets/icons/whitelogo.ico" rel="icon" media="(prefers-color-scheme: dark)" />
+    <script src="/theme.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="nav-left">
+                <input type="checkbox" id="mobile-menu-toggle">
+                <label for="mobile-menu-toggle" class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <a href="/" title="Hem" class="logo" aria-label="Home">
+                    <img draggable="false" height="40" width="40"
+                        src="https://ingascouter.github.io/assets/icons/logo.png" alt="Logo" />
+                </a>
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <input type="checkbox" id="dropdown1">
+                        <label title="Bli scout" for="dropdown1" class="dd-btn">Bli scout</label>
+                        <ul class="dropdown-content">
+                            <div>
+                                <li><a href="/bli/vad" title="Vad är scouting?">Vad är scouting?</a></li>
+                                <li><a href="/bli/barn" title="Kom med som barn">Kom med som barn</a></li>
+                                <li><a href="/bli/vuxen" title="Kom med som vuxen">Kom med som vuxen</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="dropdown2">
+                        <label title="Åldersgrupper" for="dropdown2" class="dd-btn">Åldersgrupper</label>
+                        <ul class="dropdown-content">
+                            <div>
+                                <li><a href="/grupper/familjescouter" title="Familjescouter">Familjescouter</a></li>
+                                <li><a href="/grupper/vargungar" title="Vargungar">Vargungar</a></li>
+                                <li><a href="/grupper/aventyrsscouter" title="Äventyrsscouter">Äventyrsscouter</a></li>
+                                <li><a href="/grupper/spejarscouter" title="Spejarscouter">Spejarscouter</a></li>
+                                <li><a href="/grupper/explorerscouter" title="Explorerscouter">Explorerscouter</a></li>
+                                <li><a href="/grupper/roverscouter" title="Roverscouter">Roverscouter</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="dropdown3">
+                        <label title="Om kåren" for="dropdown3" class="dd-btn">Om kåren</label>
+                        <ul class="dropdown-content">
+                            <div>
+                                <li><a href="/om/historia" title="Historia">Historia</a></li>
+                                <li><a href="/om/styrelsen" title="Styrelsen">Styrelsen</a></li>
+                                <li><a href="/om/sponsorer" title="Sponsorer">Sponsorer</a></li>
+                                <li><a href="/om/lokaler" title="Våra lokaler">Våra lokaler</a></li>
+                                <li><a href="/om/hallbarhet" title="Hållbarhet">Hållbarhet</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="dropdown4">
+                        <label title="Om kåren" for="dropdown4" class="dd-btn">För medlemmar</label>
+                        <ul class="dropdown-content">
+                            <div>
+                                <li><a href="/medlemmar/kuksa" title="Användning av kuksa">Användning av kuksa</a></li>
+                                <li><a href="/medlemmar/marken" title="Var märken sys">Märken</a></li>
+                                <li><a href="/medlemmar/ordbok" title="Vår ordbok">Kårens ordbok</a></li>
+                                <li><a class="active" href="/medlemmar/formaner"
+                                        title="Förmåner som scout">Scoutförmåner</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.heydreamshop.com/ingascouter" onclick="webshopCode()" target="_blank"
+                            rel="noopener noreferrer" title="Webshop (öppnar i ny flik)">Webshop</a></li>
+                    <li><a title="Kuksa (öppnar i ny flik)" href="https://kuksa.partio.fi" target="_blank"
+                            rel="noopener noreferrer">Kuksa</a></li>
+                </ul>
+            </div>
+            <ul class="nav-right">
+                <li><a title="Kuksa (öppnar i ny flik)" href="https://kuksa.partio.fi" target="_blank"
+                        rel="noopener noreferrer"><img height="40" width="40" alt="Kuksa Logo"
+                            src="https://ingascouter.github.io/assets/icons/kuksa_logo.png"></a></li>
+                <li style="display: none;" id="theme-toggle">
+                    <button title="Växla tema" onclick="toggleDarkMode()"><i
+                            class="fa-solid fa-circle-half-stroke"></i></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <img class="banner" draggable="false" src="/assets/banners/spelifix-banner.jpg" alt="Banner">
+    <main>
+        <h1>
+            Förmåner som scout
+        </h1>
+        <p>Som medlem får du:
+        <ul>
+            <li><a href="https://www.scout.fi/for-scouter/medlemstjanster/scoutforsakring/">Scoutförsäkringen</a>.</li>
+            <li>En prenumeration på <a href="https://issuu.com/finlandssvenskascouter">scoutposten</a> (kan avslutas i
+                kuksa).</li>
+            <li>Möjligheten att delta i FiSSc:s, FS:s och världsförbundens <a
+                    href="https://www.scout.fi/for-scouter/upplevelser-och-aventyr/evenemang-och-tavlingar/">evenemang,
+                    tävlingar</a>, <a
+                    href="https://www.scout.fi/for-scouter/upplevelser-och-aventyr/fardighetsutbildning/">färdighets-</a>
+                och <a
+                    href="https://www.scout.fi/for-scouter/upplevelser-och-aventyr/ledarskapsutbildning/">ledarskapsutbildningar</a>.
+            </li>
+            <li>Söka <a href="http://ansokan.scout.webbhuset.fi/anvisningar/">stipendier</a> från FiSSc och FS.</li>
+            <li><a href="https://www.scout.fi/for-scouter/medlemstjanster/stipendier-och-understod/">Reseunderstöd</a>
+                då man deltar i FiSSc:s utbildningar.</li>
+            <li>Förmånerna som listas nedan</li>
+        </ul>
+        </p>
+
+        <p>Scoutavgiften går även till att utveckla Finlands scouter samt att ekonomiskt stötta alla finländska
+            scoutkårer. Läs
+            mer på <a href="https://www.scout.fi/for-scouter/medlemstjanster/medlemsformaner/">scout.fi</a>.</p>
+
+        <h2>Rabatter på friluftsbutiker</h2>
+        <p>Som medlem i scouterna får du 10% rabatt på utvalda produkter i butikerna nedan. För att använda rabatten i
+            butikerna
+            kan du visa upp ditt medlemskort genom att skriva ut det eller bara öppna det via kuksa på din telefon. Om
+            du
+            vill
+            använda rabatten på nätet behöver du registrera dig i webbutiken med ditt medlemsnummer som också hittas i
+            kuksa.</p>
+        <h3>Scandinavian Outdoor</h3>
+        <p>Scandinavian Outdoor ger 10% rabatt på allt förutom scoutprodukter, elektronik, presentkort, klubbpriser,
+            produktpaket
+            och kan inte kombineras med andra rabattkoder. Rabatten gäller både produkter till normalpris och
+            kampanjpris.
+
+            <em><strong>Tips: studerande med studiekort får också 10% rabatt, men denna kan användas för alla
+                    produkter.</strong></em>
+
+            Finlands scouter samarbetar också med Scandinavian Outdoor och de ansvarar för försäljning och distribution
+            av
+            officiella scoutprodukter, såsom märken och riggar (se partio på Scandinavian Outdoor).
+        </p>
+        <h3>Partioaitta</h3>
+        <p>Partioaitta erbjuder också 10% rabatt. Rabatten gäller inte nedsatta produkter, 365-klubberbjudanden, Second
+            Hand-produkter och serviceprodukter.</p>
+        <h2>Finlands vandrarhemsförbund</h2>
+        <p>Som medlem i scouterna kan du kostnadsfritt beställa ett inhemskt vandrarhemskort som bland annat ger dig 10
+            %
+            rabatt på
+            boende på vandrarhem i Finland. Du kan även skaffa ett internationellt vandrarhemskort till nedsatt pris.
+            Läs
+            mer på
+            hostellit.fi, eller gå direkt till formuläret för gratis vandrarhemskort.</p>
+        <time class="updated">1 jan. 1970</time>
+    </main>
+    <footer>
+        <a class="logo-left" href="https://www.scout.fi/for-karen/karadministration/hallbarhet-i-karen/hallbar-scoutkar"
+            target="_blank" rel="noopener noreferrer" title="Info om hållbar scoutkår-certifikatet
+(öppnar i ny flik)">
+            <img height="150" width="150" src="/assets/icons/hallbar_scoutkar_gron.png" alt="Hållbar Scoutkår">
+        </a>
+        <div class="footer-text">
+            <h1>Ingå Scouter r.f.</h1>
+            <p>
+                <br>
+                Rapportera fel: <a href="https://github.com/ingascouter/ingascouter.github.io/issues">github.com</a>
+            </p>
+            <a title="Skriv mejl till oss 
+(öppnar i ny flik)" href="mailto:ingascouter@gmail.com" target="_blank"
+                rel="noopener noreferrer">ingascouter@gmail.com</a>
+            <div class="socials">
+                <a title="Facebook" href="https://www.facebook.com/ingascouter/"><i class="fab fa-facebook"></i></a>
+                <a title="Instagram" href="https://www.instagram.com/ingascouter/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <img height="150" width="150" class="logo-right" src="/assets/icons/logo.png" alt="Ingå Scouters logo">
+    </footer>
+
+    <button onclick="topFunction()" id="scrolltotop" title="Gå till toppen">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+    <script src="/script.js"></script>
+</body>
+
+</html>
