@@ -22,7 +22,7 @@ function enableDarkMode() {
 }
 
 // Function to disable dark mode
-const sun = document.querySelector('.sun');
+const moon = document.querySelector('.sun');
 function disableDarkMode() {
     // Set body "color scheme" style to "light"
     document.documentElement.style.colorScheme = 'light';
