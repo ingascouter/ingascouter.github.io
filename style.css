@@ -381,6 +381,7 @@ main {
 
 main * {
   padding: revert;
+  margin: revert;
 }
 
 main a:link {
@@ -391,11 +392,7 @@ main a:hover {
   text-decoration: none;
 }
 
-main>p {
-  margin-bottom: 1rem;
-}
-
-main>h1 {
+main h1 {
   font-family: Tondu;
   margin: 1rem 0 2rem;
   letter-spacing: 1px;
@@ -487,18 +484,19 @@ blockquote::after {
   height: 130px;
 }
 
-h1.grupp {
+#grupp {
   font-family: Tondu;
   font-size: 40px;
   text-transform: uppercase;
-  padding: 0;
+  margin: 0;
   color: white;
   letter-spacing: 1px;
   margin-bottom: 1rem;
 }
 
-h2.alder {
+#alder {
   color: var(--button-hover);
+  margin: 0;
 }
 
 /* Sponsorer & lokaler*/
@@ -506,7 +504,7 @@ h2.alder {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
-  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 .single-column {
@@ -534,11 +532,13 @@ h2.alder {
 
 .card-info h2 {
   font-size: 1.5rem;
+  margin: 0;
 }
 
 .card-info p {
   line-height: 1.5;
   opacity: 0.8;
+  margin: 0;
 }
 
 img.square {
@@ -604,7 +604,7 @@ footer a {
     flex-direction: column;
   }
 
-  h1.grupp {
+  #grupp {
     color: unset;
   }
 
@@ -613,7 +613,7 @@ footer a {
     margin-bottom: 2rem;
   }
 
-  div:has(.grupp) {
+  div:has(#grupp) {
     display: flex;
     flex-direction: column;
     text-align: center;
