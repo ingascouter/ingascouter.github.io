@@ -402,10 +402,6 @@ main h1 {
   font-size: 40px;
 }
 
-main>h2 {
-  margin: 2rem 0 .5rem;
-}
-
 .updated {
   background: var(--body-alt);
   padding: 0 8px;
