@@ -95,8 +95,10 @@ h6 {
 
 body {
   transition: all .5s linear;
-  background: var(--body-bg), white;
-  color: var(--body-txt), black;
+  background: white;
+  background: var(--body-bg);
+  color: black;
+  color: var(--body-txt);
 }
 
 /* ------------ Navbar ------------ */
