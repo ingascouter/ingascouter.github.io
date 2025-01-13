@@ -95,9 +95,7 @@ h6 {
 
 body {
   transition: all .5s linear;
-  background: white;
   background: var(--body-bg);
-  color: black;
   color: var(--body-txt);
 }
 
