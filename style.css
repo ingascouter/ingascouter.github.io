@@ -392,6 +392,12 @@ main a:hover {
   text-decoration: none;
 }
 
+main img {
+  margin: auto;
+  display: block;
+  max-height: 70vh;
+}
+
 main h1 {
   font-family: Tondu;
   margin: 1rem 0 2rem;
