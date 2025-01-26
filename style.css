@@ -521,6 +521,7 @@ details[open] summary {
 
 .blue-bg * {
   color: white;
+  margin: 0;
 }
 
 .blue-bg p {
