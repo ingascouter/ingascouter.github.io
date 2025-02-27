@@ -91,6 +91,7 @@ h6 {
   font-family: var(--body-font);
   background: var(--button-default);
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -446,6 +447,8 @@ main h1 {
 .fullpage {
   min-height: 100vh;
   align-content: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .cta-btns {
