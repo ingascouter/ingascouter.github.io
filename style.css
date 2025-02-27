@@ -91,7 +91,7 @@ h6 {
   font-family: var(--body-font);
   background: var(--button-default);
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
 }
 
 body {
@@ -365,41 +365,48 @@ li:has(li .active) {
 
 
 /* ------------ Main ------------ */
+main {
+  min-height: 100svh;
+  max-width: 1200px;
+  margin: auto;
+}
+
 .banner {
   width: 100%;
   height: 305px;
   object-fit: cover;
-  filter: brightness(.8);
+  mask-image: linear-gradient(rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.5) 70%,
+      rgba(0, 0, 0, 0));
 }
 
-main {
-  min-height: calc(100svh - 375px);
+article {
   line-height: 2rem;
   padding: 1rem;
   margin: auto;
   max-width: 900px;
 }
 
-main * {
+article * {
   padding: revert;
   margin: revert;
 }
 
-main a:link {
+article a:link {
   color: var(--button-hover);
 }
 
-main a:hover {
+article a:hover {
   text-decoration: none;
 }
 
-main img {
+article img {
   margin: auto;
   display: block;
   max-height: 70vh;
 }
 
-main h1 {
+article h1 {
   font-family: Tondu;
   margin: 1rem 0 2rem;
   letter-spacing: 1px;
@@ -447,8 +454,8 @@ main h1 {
 .fullpage {
   min-height: 100vh;
   align-content: center;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+  /* scroll-snap-align: start;
+  scroll-snap-stop: always; */
 }
 
 .cta-btns {
@@ -640,6 +647,7 @@ footer {
   background-color: var(--button-default);
   grid-template-areas: "logo-left footer-text logo-right";
   margin-top: 4rem;
+  /* scroll-snap-align: end; */
 }
 
 footer img {
