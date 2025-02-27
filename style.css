@@ -415,6 +415,10 @@ article h1 {
   font-size: 40px;
 }
 
+article p {
+  margin: 0 1rem;
+}
+
 .updated {
   background: var(--body-alt);
   padding: 0 8px;
