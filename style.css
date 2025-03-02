@@ -643,6 +643,16 @@ img.square {
   aspect-ratio: 1;
 }
 
+/* Ordbok */
+dl,
+.sub {
+  padding-left: 1.5rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
 /* ------------ Footer ------------ */
 footer {
   position: sticky;
