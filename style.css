@@ -148,7 +148,7 @@ nav a>img {
   display: inline-block;
 }
 
-.dropdown input[type="checkbox"] {
+.dropdown input[type="radio"] {
   display: none;
 }
 
@@ -350,15 +350,15 @@ li:has(li .active) {
     display: none;
   }
 
-  .dropdown input[type="checkbox"]:checked~.dropdown-content {
+  .dropdown input[type="radio"]:checked~.dropdown-content {
     grid-template-rows: 1fr;
   }
 
-  .dropdown input[type="checkbox"]:checked~label {
+  .dropdown input[type="radio"]:checked~label {
     background: var(--nav-hover);
   }
 
-  .dropdown input[type="checkbox"]:checked~.dd-btn::after {
+  .dropdown input[type="radio"]:checked~.dd-btn::after {
     transform: translateY(-30%) rotate(225deg);
   }
 }
