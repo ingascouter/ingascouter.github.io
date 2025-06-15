@@ -426,6 +426,21 @@ article p {
   margin: 0 1rem 1rem;
 }
 
+article a.button {
+  background: var(--button-hover);
+  padding: .5rem 1rem;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background: var(--button-default);
+}
+
 .updated {
   background: var(--body-alt);
   padding: 0 8px;
