@@ -84,15 +84,18 @@
                             </div>
                         </ul>
                     </li>
-                    <li><a href="https://www.heydreamshop.com/ingascouter" onclick="webshopCode()" target="_blank"
-                            rel="noopener noreferrer" title="Webshop">Webshop</a></li>
-                    <li><a title="Kuksa" href="https://kuksa.partio.fi" target="_blank"
+                    <li class="desk-hide"><a href="https://www.heydreamshop.com/ingascouter" onclick="webshopCode()"
+                            target="_blank" rel="noopener noreferrer" title="Webshop">Webshop</a></li>
+                    <li class="desk-hide"><a title="Kuksa" href="https://kuksa.partio.fi" target="_blank"
                             rel="noopener noreferrer">Kuksa</a></li>
                 </ul>
             </div>
             <ul class="nav-right">
-                <li><a title="Kuksa" href="https://kuksa.partio.fi" target="_blank" rel="noopener noreferrer"><img
-                            height="40" width="40" alt="Kuksa Logo"
+                <li id="webshop" class="mobile-hide"><a href="https://www.heydreamshop.com/ingascouter"
+                        onclick="webshopCode()" target="_blank" rel="noopener noreferrer" title="Webshop"><i
+                            class="fa-solid fa-cart-shopping"></i></a></li>
+                <li id="kuksa" class="mobile-hide"><a title="Kuksa" href="https://kuksa.partio.fi" target="_blank"
+                        rel="noopener noreferrer"><img height="40" width="40" alt="Kuksa Logo"
                             src="https://ingascouter.github.io/assets/icons/kuksa_logo.png"></a></li>
                 <li style="display: none;" id="theme-toggle">
                     <button title="Växla tema" onclick="toggleDarkMode()"><i
