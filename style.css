@@ -91,7 +91,7 @@ h6 {
   font-family: var(--body-font);
   background: var(--button-default);
   scroll-behavior: smooth;
-  /* scroll-snap-type: y mandatory; */
+  scrollbar-color: white var(--button-default);
 }
 
 /* Animations */
@@ -252,16 +252,27 @@ li:has(li .active) {
   -webkit-user-drag: none;
 }
 
-#theme-toggle button {
+#webshop a {
   line-height: 0;
-  padding: 19.5px;
+  padding: 15.5px 14px;
+  font-size: x-large;
+}
+
+#kuksa img {
+  filter: grayscale(1) invert(1) brightness(5);
+}
+
+#theme-toggle button {
+  font-size: x-large;
+  line-height: 0;
+  padding: 15.5px;
   background: unset;
   color: white;
   border: none;
 }
 
 /* Desktop nav */
-@media (hover: hover) and (min-width: 770px) {
+@media (hover: hover) and (min-width: 800px) {
 
   .dropdown:hover .dropdown-content,
   .dropdown .dropdown-content:focus-within {
@@ -269,7 +280,7 @@ li:has(li .active) {
     grid-template-rows: 1fr;
   }
 
-  .nav-links>li:last-child {
+  .desk-hide {
     display: none;
   }
 
@@ -329,7 +340,7 @@ li:has(li .active) {
 }
 
 @media (hover: none),
-(max-width: 770px) {
+(max-width: 800px) {
   .hamburger {
     display: block;
     z-index: 999;
@@ -380,7 +391,7 @@ li:has(li .active) {
     top: 0;
   }
 
-  .nav-right li:first-child {
+  .mobile-hide {
     display: none;
   }
 
@@ -759,7 +770,7 @@ footer a {
 }
 
 /* ------------ Media Queries ------------ */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 800px) {
   .group-title {
     flex-direction: column;
   }
