@@ -562,7 +562,8 @@ article a.button {
 details {
   border: 2px solid #aaa;
   border-radius: 18px;
-  padding: 0.5rem 0.5rem 0;
+  padding: 0.5rem;
+  padding-bottom: 0;
   margin: 1rem;
   transition: linear box-shadow 0.1s;
 }
@@ -577,7 +578,7 @@ summary {
 }
 
 details[open] {
-  padding: 0.5rem 1rem;
+  padding-bottom: 0.5rem;
 }
 
 details[open] summary {
