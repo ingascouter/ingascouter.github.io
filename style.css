@@ -391,6 +391,19 @@ li:has(li .active) {
   }
 }
 
+/* Under maintinance */
+.maintinance {
+  background: darkred;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 14px;
+  position: fixed;
+  width: 100%;
+  top: 55px;
+  z-index: 1000;
+}
 
 /* ------------ Main ------------ */
 main {
