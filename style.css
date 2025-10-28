@@ -287,8 +287,9 @@ li:has(li .active) {
 /* Mobile nav */
 .nav-right {
   display: flex;
-  align-items: center;
   z-index: 998;
+  /* I'd like to remove these if I just could figure out how to get the dropdowns behind the navbar */
+  align-items: center;
   justify-content: right;
   width: 100%;
   background: var(--nav-clr);
@@ -402,7 +403,6 @@ li:has(li .active) {
   position: fixed;
   width: 100%;
   top: 55px;
-  z-index: 1000;
 }
 
 /* ------------ Main ------------ */
@@ -416,7 +416,7 @@ main {
   width: 100%;
   height: 305px;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 0 0 30px 30px;
 }
 
 .fade {
