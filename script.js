@@ -1,9 +1,3 @@
-// Loading screen functionality
-var loadingScreen = document.querySelector(".loadingscreen");
-window.addEventListener('load', function () {
-  loadingScreen.style.display = 'none';
-})
-
 // Theme toggle functionality
 
 // Hide navbar on scroll
