@@ -399,7 +399,7 @@ li:has(li .active) {
   text-align: center;
   padding: 1rem;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1rem;
   width: 100%;
   position: absolute;
   z-index: -1;
