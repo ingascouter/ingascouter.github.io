@@ -400,8 +400,9 @@ li:has(li .active) {
   padding: 1rem;
   font-weight: bold;
   font-size: 14px;
-  position: fixed;
   width: 100%;
+  position: absolute;
+  z-index: -1;
   top: 55px;
 }
 
