@@ -772,17 +772,10 @@ footer a {
     flex-direction: column;
     text-align: center;
   }
-
-  footer {
-    grid-template-columns: auto 1fr;
-    grid-template-areas:
-      "logo-right footer-text"
-      "logo-left footer-text";
-  }
 }
 
 @media print,
-(max-width: 480px) {
+(max-width: 800px) {
   footer {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -792,7 +785,7 @@ footer a {
   }
 
   footer img {
-    height: 100px;
+    height: 150px;
     width: auto;
   }
 
@@ -801,7 +794,7 @@ footer a {
   }
 
   .logo-right {
-    height: 80px;
+    height: 120px;
   }
 }
 
