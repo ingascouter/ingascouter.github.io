@@ -86,8 +86,12 @@ h6 {
   --body-font: Arial, Helvetica, sans-serif;
   --button-default: hsl(223, 46%, 27%);
   --button-hover: hsl(198, 76%, 52%);
+
   --nav-clr: var(--button-default);
   --nav-hover: var(--button-hover);
+  --nav-font: var(--body-font);
+  --nav-time: 0.3s;
+
   font-family: var(--body-font);
   background: var(--button-default);
   scroll-behavior: smooth;
@@ -101,16 +105,6 @@ h6 {
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 body {
   transition: all .5s linear;
   background: var(--body-bg);
@@ -118,25 +112,30 @@ body {
 }
 
 /* ------------ Navbar ------------ */
-nav {
+.navbar {
   background: var(--nav-clr);
-  position: fixed;
-  width: 100%;
-  top: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  font-family: var(--nav-font);
+  box-shadow: 0 1px 10px var(--nav-clr);
+}
+
+nav {
+  transition: top var(--nav-time);
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 999;
-  font-family: Arial, sans-serif;
-  transition: top 0.4s;
 }
 
 nav li {
   list-style: none;
 }
 
-.nav-left {
+.navbar>*,
+.nav-links {
   display: flex;
+  text-align: center;
 }
 
 nav a:has(img) {
@@ -144,7 +143,6 @@ nav a:has(img) {
   display: block;
   text-decoration: none;
   -webkit-user-drag: none;
-  z-index: 999;
 }
 
 nav a>img {
@@ -152,12 +150,6 @@ nav a>img {
   height: 40px;
   display: block;
   max-width: unset;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  text-align: center;
 }
 
 .dropdown {
@@ -182,7 +174,6 @@ nav a {
   text-wrap: balance;
 }
 
-/* Arrow indicator for dropdowns */
 .dd-btn {
   white-space: nowrap;
   position: relative;
@@ -199,14 +190,15 @@ nav a {
   border-right: 2px solid white;
   border-bottom: 2px solid white;
   transform: translateY(-70%) rotate(45deg);
-  transition: transform 0.3s ease;
+  transition: transform var(--nav-time) ease;
 }
 
 li:has(li .active) {
   background: var(--nav-hover);
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover,
+.dropdown-content a:focus {
   text-decoration-style: wavy;
   text-decoration-line: underline;
 }
@@ -220,13 +212,16 @@ li:has(li .active) {
   position: absolute;
   background: var(--nav-clr);
   width: 100%;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease-out;
+  transition: grid-template-rows var(--nav-time) ease-out;
 }
 
 .dropdown-content>div {
   overflow: hidden;
+}
+
+.nav-links {
+  z-index: 999;
 }
 
 .dropdown-content a {
@@ -235,23 +230,23 @@ li:has(li .active) {
   -webkit-user-drag: none;
 }
 
-#webshop a {
-  line-height: 0;
-  padding: 15.5px 14px;
-  font-size: x-large;
-}
-
 #kuksa img {
   filter: grayscale(1) invert(1) brightness(5);
 }
 
-#theme-toggle button {
+#theme-toggle button,
+#webshop a {
   font-size: x-large;
   line-height: 0;
   padding: 15.5px;
   background: unset;
   color: white;
   border: none;
+  cursor: pointer;
+}
+
+#webshop a {
+  padding: 15.5px 14px;
 }
 
 /* Desktop nav */
@@ -276,31 +271,23 @@ li:has(li .active) {
     transform: translateY(-30%) rotate(225deg);
   }
 
+  .logo:hover,
+  .logo:focus,
   .logo.active,
   .nav-links>li:hover,
-  .nav-right>li:hover,
-  .logo:hover {
+  .nav-links>li:focus-within,
+  .navbar>*>li:hover,
+  .navbar>*>li:focus-within {
     background: var(--nav-hover);
   }
 }
 
 /* Mobile nav */
-.nav-right {
-  display: flex;
-  z-index: 998;
-  /* I'd like to remove these if I just could figure out how to get the dropdowns behind the navbar */
-  align-items: center;
-  justify-content: right;
-  width: 100%;
-  background: var(--nav-clr);
-}
-
 .hamburger {
   display: none;
   cursor: pointer;
   padding: 13px 15px;
   user-select: none;
-  background: var(--nav-clr);
 }
 
 .hamburger span {
@@ -309,7 +296,7 @@ li:has(li .active) {
   height: 3px;
   background: white;
   margin: 5px 0;
-  transition: 0.3s;
+  transition: var(--nav-time);
   user-select: none;
   border-radius: 2px;
 }
@@ -318,19 +305,14 @@ li:has(li .active) {
   display: none;
 }
 
-#theme-toggle a {
-  line-height: 0;
-  padding: 19.5px;
-}
-
 @media (hover: none),
 (max-width: 800px) {
   .hamburger {
     display: block;
-    z-index: 999;
   }
 
   .nav-links {
+    z-index: -1;
     position: fixed;
     left: 0;
     right: 0;
@@ -338,7 +320,7 @@ li:has(li .active) {
     height: calc(100vh - 55px);
     background: var(--nav-clr);
     flex-direction: column;
-    transition: 0.3s;
+    transition: var(--nav-time);
     align-items: center;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -350,10 +332,13 @@ li:has(li .active) {
 
   .dropdown-content {
     position: static;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.3);
   }
 
   #mobile-menu-toggle:checked~.nav-links {
     top: 55px;
+    /* Maintinance */
+    top: 110px;
   }
 
   #mobile-menu-toggle:checked~.hamburger span:nth-child(1) {
@@ -392,7 +377,7 @@ li:has(li .active) {
   }
 }
 
-/* Under maintinance */
+/* Under maintinance banner */
 .maintinance {
   background: darkred;
   color: white;
@@ -402,8 +387,8 @@ li:has(li .active) {
   font-size: 1rem;
   width: 100%;
   position: absolute;
-  z-index: -1;
   top: 55px;
+  display: block;
 }
 
 /* ------------ Main ------------ */

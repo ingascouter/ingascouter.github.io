@@ -13,13 +13,13 @@ window.onscroll = function () {
 
   // Don't hide navbar if mobile menu is open
   if (mobileMenuOpen) {
-    document.getElementById("navbar").style.top = "0";
+    document.getElementById("autohide").style.top = "0";
   }
   // Otherwise, handle normal scroll behavior
   else if (currentScrollPos > prevScrollPos && currentScrollPos > 0) {
-    document.getElementById("navbar").style.top = "-55px";
+    document.getElementById("autohide").style.top = "-55px";
   } else {
-    document.getElementById("navbar").style.top = "0";
+    document.getElementById("autohide").style.top = "0";
   }
   prevScrollPos = currentScrollPos;
 

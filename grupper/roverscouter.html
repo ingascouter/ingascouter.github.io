@@ -20,88 +20,95 @@
 
 <body>
     <header>
-        <nav id="navbar">
-            <div class="nav-left">
-                <input type="checkbox" id="mobile-menu-toggle">
-                <label for="mobile-menu-toggle" class="hamburger" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-                <a href="/" title="Hem" class="logo" aria-label="Home">
-                    <img draggable="false" height="40" width="40"
-                        src="https://ingascouter.github.io/assets/icons/logo.png" alt="Logo" />
-                </a>
-                <ul class="nav-links">
-                    <li class="dropdown">
-                        <input type="radio" id="dropdown1" name="dropdown">
-                        <label title="Bli scout" for="dropdown1" class="dd-btn">Bli scout</label>
-                        <ul class="dropdown-content">
-                            <div>
-                                <li><a href="/bli/vad" title="Vad är scouting?">Vad är scouting?</a></li>
-                                <li><a href="/bli/barn" title="Kom med som barn">Kom med som barn</a></li>
-                                <li><a href="/bli/vuxen" title="Kom med som vuxen">Kom med som vuxen</a></li>
-                            </div>
-                        </ul>
+        <nav id="autohide">
+            <div class="navbar">
+                <div class="nav-left">
+                    <input type="checkbox" id="mobile-menu-toggle">
+                    <label for="mobile-menu-toggle" class="hamburger" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <a href="/" title="Hem" class="logo" aria-label="Home">
+                        <img draggable="false" height="40" width="40"
+                            src="https://ingascouter.github.io/assets/icons/logo.png" alt="Logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li class="dropdown">
+                            <input type="radio" id="dropdown1" name="dropdown">
+                            <label title="Bli scout" for="dropdown1" class="dd-btn">Bli scout</label>
+                            <ul class="dropdown-content">
+                                <div>
+                                    <li><a href="/bli/vad" title="Vad är scouting?">Vad är scouting?</a></li>
+                                    <li><a href="/bli/barn" title="Kom med som barn">Kom med som barn</a></li>
+                                    <li><a href="/bli/vuxen" title="Kom med som vuxen">Kom med som vuxen</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <input type="radio" id="dropdown2" name="dropdown">
+                            <label title="Åldersgrupper" for="dropdown2" class="dd-btn">Åldersgrupper</label>
+                            <ul class="dropdown-content">
+                                <div>
+                                    <li><a href="/grupper/familjescouter" title="Familjescouter">Familjescouter</a></li>
+                                    <li><a href="/grupper/vargungar" title="Vargungar">Vargungar</a></li>
+                                    <li><a href="/grupper/aventyrsscouter" title="Äventyrsscouter">Äventyrsscouter</a>
+                                    </li>
+                                    <li><a href="/grupper/spejarscouter" title="Spejarscouter">Spejarscouter</a></li>
+                                    <li><a href="/grupper/explorerscouter" title="Explorerscouter">Explorerscouter</a>
+                                    </li>
+                                    <li><a href="/grupper/roverscouter" title="Roverscouter">Roverscouter</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <input type="radio" id="dropdown3" name="dropdown">
+                            <label title="Om kåren" for="dropdown3" class="dd-btn">Om kåren</label>
+                            <ul class="dropdown-content">
+                                <div>
+                                    <li><a href="/om/historia" title="Historia">Historia</a></li>
+                                    <li><a href="/om/styrelsen" title="Styrelsen">Styrelsen</a></li>
+                                    <li><a href="/om/sponsorer" title="Sponsorer">Sponsorer</a></li>
+                                    <li><a href="/om/lokaler" title="Våra lokaler">Våra lokaler</a></li>
+                                    <li><a href="/om/hallbarhet" title="Hållbarhet">Hållbarhet</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <input type="radio" id="dropdown4" name="dropdown">
+                            <label title="Om kåren" for="dropdown4" class="dd-btn">För medlemmar</label>
+                            <ul class="dropdown-content">
+                                <div>
+                                    <li><a href="/medlemmar/kuksa" title="Användning av kuksa">Användning av kuksa</a>
+                                    </li>
+                                    <li><a href="/medlemmar/marken" title="Var märken sys">Märken</a></li>
+                                    <li><a href="/medlemmar/ordbok" title="Vår ordbok">Kårens ordbok</a></li>
+                                    <li><a href="/medlemmar/formaner" title="Förmåner som scout">Scoutförmåner</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="desk-hide"><a href="https://www.heydreamshop.com/ingascouter" onclick="webshopCode()"
+                                target="_blank" rel="noopener noreferrer" title="Webshop">Webshop</a></li>
+                        <li class="desk-hide"><a title="Kuksa" href="https://kuksa.partio.fi" target="_blank"
+                                rel="noopener noreferrer">Kuksa</a></li>
+                    </ul>
+                </div>
+                <ul class="nav-right">
+                    <li id="webshop" class="mobile-hide"><a href="https://www.heydreamshop.com/ingascouter"
+                            onclick="webshopCode()" target="_blank" rel="noopener noreferrer" title="Webshop"><i
+                                class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li id="kuksa" class="mobile-hide"><a title="Kuksa" href="https://kuksa.partio.fi" target="_blank"
+                            rel="noopener noreferrer"><img height="40" width="40" alt="Kuksa Logo"
+                                src="https://ingascouter.github.io/assets/icons/kuksa_logo.png"></a></li>
+                    <li style="display: none;" id="theme-toggle">
+                        <button title="Växla tema" onclick="toggleDarkMode()"><i
+                                class="fa-solid fa-circle-half-stroke"></i></button>
                     </li>
-                    <li class="dropdown">
-                        <input type="radio" id="dropdown2" name="dropdown">
-                        <label title="Åldersgrupper" for="dropdown2" class="dd-btn">Åldersgrupper</label>
-                        <ul class="dropdown-content">
-                            <div>
-                                <li><a href="/grupper/familjescouter" title="Familjescouter">Familjescouter</a></li>
-                                <li><a href="/grupper/vargungar" title="Vargungar">Vargungar</a></li>
-                                <li><a href="/grupper/aventyrsscouter" title="Äventyrsscouter">Äventyrsscouter</a></li>
-                                <li><a href="/grupper/spejarscouter" title="Spejarscouter">Spejarscouter</a></li>
-                                <li><a href="/grupper/explorerscouter" title="Explorerscouter">Explorerscouter</a></li>
-                                <li><a class="active" href="/grupper/roverscouter" title="Roverscouter">Roverscouter</a>
-                                </li>
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <input type="radio" id="dropdown3" name="dropdown">
-                        <label title="Om kåren" for="dropdown3" class="dd-btn">Om kåren</label>
-                        <ul class="dropdown-content">
-                            <div>
-                                <li><a href="/om/historia" title="Historia">Historia</a></li>
-                                <li><a href="/om/styrelsen" title="Styrelsen">Styrelsen</a></li>
-                                <li><a href="/om/sponsorer" title="Sponsorer">Sponsorer</a></li>
-                                <li><a href="/om/lokaler" title="Våra lokaler">Våra lokaler</a></li>
-                                <li><a href="/om/hallbarhet" title="Hållbarhet">Hållbarhet</a></li>
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <input type="radio" id="dropdown4" name="dropdown">
-                        <label title="Om kåren" for="dropdown4" class="dd-btn">För medlemmar</label>
-                        <ul class="dropdown-content">
-                            <div>
-                                <li><a href="/medlemmar/kuksa" title="Användning av kuksa">Användning av kuksa</a></li>
-                                <li><a href="/medlemmar/marken" title="Var märken sys">Märken</a></li>
-                                <li><a href="/medlemmar/ordbok" title="Vår ordbok">Kårens ordbok</a></li>
-                                <li><a href="/medlemmar/formaner" title="Förmåner som scout">Scoutförmåner</a></li>
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="desk-hide"><a href="https://www.heydreamshop.com/ingascouter" onclick="webshopCode()"
-                            target="_blank" rel="noopener noreferrer" title="Webshop">Webshop</a></li>
-                    <li class="desk-hide"><a title="Kuksa" href="https://kuksa.partio.fi" target="_blank"
-                            rel="noopener noreferrer">Kuksa</a></li>
                 </ul>
+                <div class="maintinance">
+                    <p>Vi bygger ännu på sidan så lita inte på något du läser för tillfället!</p>
+                </div>
             </div>
-            <ul class="nav-right">
-                <li id="webshop" class="mobile-hide"><a href="https://www.heydreamshop.com/ingascouter"
-                        onclick="webshopCode()" target="_blank" rel="noopener noreferrer" title="Webshop"><i
-                            class="fa-solid fa-cart-shopping"></i></a></li>
-                <li id="kuksa" class="mobile-hide"><a title="Kuksa" href="https://kuksa.partio.fi" target="_blank"
-                        rel="noopener noreferrer"><img height="40" width="40" alt="Kuksa Logo"
-                            src="https://ingascouter.github.io/assets/icons/kuksa_logo.png"></a></li>
-                <li style="display: none;" id="theme-toggle">
-                    <button title="Växla tema" onclick="toggleDarkMode()"><i
-                            class="fa-solid fa-circle-half-stroke"></i></button>
-                </li>
-            </ul>
         </nav>
     </header>
     <main>
