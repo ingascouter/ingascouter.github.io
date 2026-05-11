@@ -1,0 +1,47 @@
+- title: Bli scout
+  dropdown:
+    - title: Vad är scouting?
+      url: /bli/vad
+    - title: Kom med som barn
+      url: /bli/barn
+    - title: Kom med som vuxen
+      url: /bli/vuxen
+
+- title: Åldersgrupper
+  dropdown:
+    - title: Familjescouter
+      url: /grupper/familjescouter
+    - title: Vargungar
+      url: /grupper/vargungar
+    - title: Äventyrsscouter
+      url: /grupper/aventyrsscouter
+    - title: Spejarscouter
+      url: /grupper/spejarscouter
+    - title: Explorerscouter
+      url: /grupper/explorerscouter
+    - title: Roverscouter
+      url: /grupper/roverscouter
+
+- title: Om kåren
+  dropdown:
+    - title: Historia
+      url: /om/historia
+    - title: Styrelsen
+      url: /om/styrelsen
+    - title: Sponsorer
+      url: /om/sponsorer
+    - title: Våra lokaler
+      url: /om/lokaler
+    - title: Hållbarhet
+      url: /om/hallbarhet
+
+- title: För medlemmar
+  dropdown:
+    - title: Användning av kuksa
+      url: /medlemmar/kuksa
+    - title: Märken
+      url: /medlemmar/marken
+    - title: Kårens ordbok
+      url: /medlemmar/ordbok
+    - title: Scoutförmåner
+      url: /medlemmar/formaner

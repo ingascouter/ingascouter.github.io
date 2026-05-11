@@ -13,63 +13,27 @@
                         src="https://ingascouter.github.io/assets/icons/logo.png" alt="Logo">
                 </a>
                 <ul class="nav-links">
+                    {% for item in site.data.nav %}
+                    {% if item.dropdown %}
                     <li class="dropdown">
-                        <input type="radio" id="dropdown1" name="dropdown">
-                        <label title="Bli scout" for="dropdown1" class="dd-btn">Bli scout</label>
+                        <input type="radio" id="dropdown{{ forloop.index }}" name="dropdown">
+                        <label title="{{ item.title }}" for="dropdown{{ forloop.index }}" class="dd-btn">
+                            {{ item.title }}
+                        </label>
                         <ul class="dropdown-content">
                             <div>
-                                <li><a href="/bli/vad" title="Vad är scouting?">Vad är scouting?</a></li>
-                                <li><a href="/bli/barn" title="Kom med som barn">Kom med som barn</a></li>
-                                <li><a href="/bli/vuxen" title="Kom med som vuxen">Kom med som vuxen</a></li>
+                                {% for link in item.dropdown %}
+                                <li><a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a></li>
+                                {% endfor %}
                             </div>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <input type="radio" id="dropdown2" name="dropdown">
-                        <label title="Åldersgrupper" for="dropdown2" class="dd-btn">Åldersgrupper</label>
-                        <ul class="dropdown-content">
-                            <div>
-                                <li><a href="/grupper/familjescouter" title="Familjescouter">Familjescouter</a></li>
-                                <li><a href="/grupper/vargungar" title="Vargungar">Vargungar</a></li>
-                                <li><a href="/grupper/aventyrsscouter" title="Äventyrsscouter">Äventyrsscouter</a>
-                                </li>
-                                <li><a href="/grupper/spejarscouter" title="Spejarscouter">Spejarscouter</a></li>
-                                <li><a href="/grupper/explorerscouter" title="Explorerscouter">Explorerscouter</a>
-                                </li>
-                                <li><a href="/grupper/roverscouter" title="Roverscouter">Roverscouter</a></li>
-                            </div>
-                        </ul>
+                    {% else %}
+                    <li class="desk-hide">
+                        <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
                     </li>
-                    <li class="dropdown">
-                        <input type="radio" id="dropdown3" name="dropdown">
-                        <label title="Om kåren" for="dropdown3" class="dd-btn">Om kåren</label>
-                        <ul class="dropdown-content">
-                            <div>
-                                <li><a href="/om/historia" title="Historia">Historia</a></li>
-                                <li><a href="/om/styrelsen" title="Styrelsen">Styrelsen</a></li>
-                                <li><a href="/om/sponsorer" title="Sponsorer">Sponsorer</a></li>
-                                <li><a href="/om/lokaler" title="Våra lokaler">Våra lokaler</a></li>
-                                <li><a href="/om/hallbarhet" title="Hållbarhet">Hållbarhet</a></li>
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <input type="radio" id="dropdown4" name="dropdown">
-                        <label title="Om kåren" for="dropdown4" class="dd-btn">För medlemmar</label>
-                        <ul class="dropdown-content">
-                            <div>
-                                <li><a href="/medlemmar/kuksa" title="Användning av kuksa">Användning av kuksa</a>
-                                </li>
-                                <li><a href="/medlemmar/marken" title="Var märken sys">Märken</a></li>
-                                <li><a href="/medlemmar/ordbok" title="Vår ordbok">Kårens ordbok</a></li>
-                                <li><a href="/medlemmar/formaner" title="Förmåner som scout">Scoutförmåner</a></li>
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="desk-hide"><a href="https://www.heydreamshop.com/ingascouter" onclick="webshopCode()"
-                            target="_blank" rel="noopener noreferrer" title="Webshop">Webshop</a></li>
-                    <li class="desk-hide"><a title="Kuksa" href="https://kuksa.partio.fi" target="_blank"
-                            rel="noopener noreferrer">Kuksa</a></li>
+                    {% endif %}
+                    {% endfor %}
                 </ul>
             </div>
             <ul class="nav-right">
