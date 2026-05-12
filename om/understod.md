@@ -1,5 +1,4 @@
 ---
-layout: default
 date: 01-01-1970
 banner: /assets/banners/banner.png
 title: Understöd vår verksamhet

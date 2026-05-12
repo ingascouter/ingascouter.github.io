@@ -1,6 +1,5 @@
 ---
 layout: grupper
-published: true
 banner: /assets/banners/grupper/explorerscouter-banner.png
 date: 01-01-1970
 title: Explorerscouter

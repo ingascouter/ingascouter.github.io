@@ -1,6 +1,4 @@
 ---
-layout: default
-published: true
 
 date: 01-01-1970
 banner: /assets/banners/banner.png

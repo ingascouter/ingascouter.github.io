@@ -1,6 +1,4 @@
 ---
-layout: default
-published: true
 description: "En beskrivning av vad artikeln kommer att handla om"
 title: Test
 date: 2025-01-23

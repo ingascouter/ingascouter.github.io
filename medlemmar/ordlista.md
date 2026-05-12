@@ -1,6 +1,4 @@
 ---
-layout: default
-published: true
 
 date: 2025-02-04
 banner: /assets/banners/banner.png

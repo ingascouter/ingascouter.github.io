@@ -1,6 +1,5 @@
 ---
 layout: grupper
-published: true
 banner: /assets/banners/grupper/aventyrsscouter-banner.png
 date: 01-01-1970
 title: Äventyrsscouter

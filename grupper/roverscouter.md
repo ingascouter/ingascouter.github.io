@@ -1,6 +1,5 @@
 ---
 layout: grupper
-published: true
 banner: /assets/banners/grupper/roverscouter-banner.png
 date: 01-01-1970
 title: Roverscouter
