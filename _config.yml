@@ -4,12 +4,20 @@ lang: sv
 title: Ingå Scouter
 description: En scoutkår i Ingå, Finland
 
-feed:
-  posts_limit: 20
-  categories:
-    - news
+defaults:
+  -
+    scope:
+      path: "" # all files in the project
+      type: "pages"
+    values:
+      layout: "default"
 
 plugins:
   # - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+feed:
+  posts_limit: 20
+  categories:
+    - news

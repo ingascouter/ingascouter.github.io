@@ -1,23 +1,12 @@
 ---
 layout: default
 published: true
+
+date: 01-01-1970
+banner: /assets/banners/banner.png
 title: Avändning av kuksa
-description: "Ingå Scouter är den enda svenskspråkiga scoutkåren i Ingå som erbjuder aktiviteter för alla åldrar,
-inklusive
-veckomöten, hajker och läger. Vår vision är att främja hållbarhet, ledarskap och gemenskap för en bättre framtid för
-unga. Vad väntar du på, kom med!"
+description: "Kuksa är scouternas medlemsregister som används av scouter och ledare för att hantera kårmedlemmar, anmälningar till evenemang och mycket mer. Om du har glömt ditt lösenord kan du återställa det på Kuksas inloggningssida."
 ---
 
-<img class="banner fade" draggable="false" src="/assets/banners/spelifix-banner.jpg" alt="Banner">
-<article>
-    <h1>
-        {{page.title}}
-    </h1>
-    <p>Kuksa är scouternas medlemsregister som används av scouter och ledare för att hantera kårmedlemmar,
-        anmälningar till evenemang och mycket mer. Om du har glömt ditt lösenord kan du återställa det på Kuksas
-        inloggningssida.
-    </p>
-    <h2>Användning av kuksa</h2>
-    <p>Ingen vet egentligen hur man använder det. Kuksa är byggt på tro, hopp och kärlek.</p>
-    <time class="updated">1 jan. 1970</time>
-</article>
+<h2>Användning av kuksa</h2>
+<p>Ingen vet egentligen hur man använder det. Kuksa är byggt på tro, hopp och kärlek.</p>
