@@ -8,7 +8,11 @@
 <body>
     {% include header.html %}
     <main>
-        {{ content }}
+        <img class="banner" draggable="false" src="{{ page.banner }}" alt="Banner">
+        <article>
+            {{ content }}
+            <time class="updated" datetime="{{ page.date | date: '%m-%d-%Y' }}">{{ page.date | date: "%-d %B %Y"}}
+        </article>
     </main>
     {% include footer.html %}
 </body>

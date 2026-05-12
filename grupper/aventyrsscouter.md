@@ -1,6 +1,8 @@
 ---
 layout: grupper
 published: true
+banner: /assets/banners/grupper/aventyrsscouter-banner.png
+date: 01-01-1970
 title: Äventyrsscouter
 description: "Ingå Scouter är den enda svenskspråkiga scoutkåren i Ingå som erbjuder aktiviteter för alla åldrar,
 inklusive
@@ -8,37 +10,33 @@ veckomöten, hajker och läger. Vår vision är att främja hållbarhet, ledarsk
 unga. Vad väntar du på, kom med!"
 ---
 
-<img class="banner" draggable="false" src="/assets/banners/grupper/aventyrsscouter-banner.png" alt="Banner">
-<article>
-    <div class="group-title">
-        <div class="logo-container" style="box-shadow: rgba(212, 121, 30, 0.6) 0 0 0 8px;"><img
-                src="/assets/icons/aventyrsscouter.png" alt="Äventyrsscouter" class="aldersgrupp-logo">
-        </div>
-        <div>
-            <h1 id="grupp">Äventyrs&shy;scouter</h1>
-            <h2 id="alder">10-12-åringar</h2>
-        </div>
+<div class="group-title">
+    <div class="logo-container" style="box-shadow: rgba(212, 121, 30, 0.6) 0 0 0 8px;"><img
+            src="/assets/icons/aventyrsscouter.png" alt="Äventyrsscouter" class="aldersgrupp-logo">
     </div>
-    <div class="blue-bg">
-        <blockquote cite="https://partio-ohjelma.fi/sv">
-            Äventyrsscouterna är 10-12 år gamla scouter. Äventyrsscouterna har möten varje veckan i lag om 10-15
-            äventyrsscouter. Lagen delas upp i mindre patruller med 4-5 äventyrsscouter. Laget leds av en eller
-            flera
-            kaptener. Kaptenen är en äldre ledare eller en roverscout. En explorerscout kan fungera som
-            hjälpledare.
-            Äventyrsscouternas basprogram räcker två år. Därtill finns det färdigt program också för ett tredje
-            äventyrsscoutår. Det tvååriga basprogrammet består av ett välkommenskede och fyra huvudväderstreck.
-            Varje huvudväderstreck omfattar ett tjugotal aktiviteter. Valfrihet i programmet finns i form av
-            utmaningar,
-            som erbjuder meningsfullt program för utfärder och möten. Basprogrammet innehåller många
-            traditionella
-            scout- och utfärdsfärdigheter. En förutsättning för att scouterna ska kunna tillägna sig dessa är
-            ofta
-            att
-            laget beger sig ut i naturen. Därför rekommenderas det att laget åker på utfärd minst två gånger per
-            termin.
-        </blockquote>
-        <p>- <a href="https://partio-ohjelma.fi/sv">Finlands Scouter</a></p>
+    <div>
+        <h1 id="grupp">Äventyrs&shy;scouter</h1>
+        <h2 id="alder">10-12-åringar</h2>
     </div>
-    <time class="updated">1 jan. 1970</time>
-</article>
+</div>
+<div class="blue-bg">
+    <blockquote cite="https://partio-ohjelma.fi/sv">
+        Äventyrsscouterna är 10-12 år gamla scouter. Äventyrsscouterna har möten varje veckan i lag om 10-15
+        äventyrsscouter. Lagen delas upp i mindre patruller med 4-5 äventyrsscouter. Laget leds av en eller
+        flera
+        kaptener. Kaptenen är en äldre ledare eller en roverscout. En explorerscout kan fungera som
+        hjälpledare.
+        Äventyrsscouternas basprogram räcker två år. Därtill finns det färdigt program också för ett tredje
+        äventyrsscoutår. Det tvååriga basprogrammet består av ett välkommenskede och fyra huvudväderstreck.
+        Varje huvudväderstreck omfattar ett tjugotal aktiviteter. Valfrihet i programmet finns i form av
+        utmaningar,
+        som erbjuder meningsfullt program för utfärder och möten. Basprogrammet innehåller många
+        traditionella
+        scout- och utfärdsfärdigheter. En förutsättning för att scouterna ska kunna tillägna sig dessa är
+        ofta
+        att
+        laget beger sig ut i naturen. Därför rekommenderas det att laget åker på utfärd minst två gånger per
+        termin.
+    </blockquote>
+    <p>- <a href="https://partio-ohjelma.fi/sv">Finlands Scouter</a></p>
+</div>
