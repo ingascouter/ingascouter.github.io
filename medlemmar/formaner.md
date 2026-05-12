@@ -1,5 +1,6 @@
 ---
 layout: default
+published: true
 title: Förmåner som scout
 description: "Ingå Scouter är den enda svenskspråkiga scoutkåren i Ingå som erbjuder aktiviteter för alla åldrar,
 inklusive

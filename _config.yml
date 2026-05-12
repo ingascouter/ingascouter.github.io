@@ -1,1 +1,15 @@
 url: https://ingascouter.github.io
+timezone: Europe/Helsinki
+lang: sv
+title: Ingå Scouter
+description: En scoutkår i Ingå, Finland
+
+feed:
+  posts_limit: 20
+  categories:
+    - news
+
+plugins:
+  # - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
