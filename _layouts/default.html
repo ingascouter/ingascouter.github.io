@@ -13,7 +13,15 @@
             <h1>
                 {{ page.title }}
             </h1>
-            <p>{{ page.description }}</p>
+            <div class="description">
+                <span>Beskrivning</span>
+                <br>
+                <p>{{ page.description }}</p>
+            </div>
+            <details>
+                <summary>Innehåll</summary>
+                {{ content | toc_only }}
+            </details>
             {{ content }}
             <time class="updated" datetime="{{ page.date | date: '%m-%d-%Y' }}">{{ page.date | date: "%-d %B %Y"}}
         </article>

@@ -95,7 +95,6 @@ h6 {
   font-family: var(--body-font);
   background: var(--button-default);
   scroll-behavior: smooth;
-  scrollbar-color: white var(--button-default);
 }
 
 /* Animations */
@@ -443,15 +442,32 @@ article img {
 
 article h1 {
   font-family: Tondu;
-  margin: 1rem 0 2rem;
+  margin-bottom: 2rem;
   letter-spacing: 1px;
   text-align: center;
   font-size: 40px;
   font-weight: normal;
 }
 
+article .description {
+  background: var(--body-alt);
+  border: 1px solid #aaaaaa50;
+  padding: 0.7rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+article .description p {
+  margin: 0;
+}
+
+article .description span {
+  font-weight: bold;
+  font-size: smaller;
+}
+
 article p {
-  margin: 0 1rem 1rem;
+  margin-bottom: 1rem;
 }
 
 article a.button {
@@ -532,23 +548,22 @@ article a.button {
 }
 
 @media (hover: hover) {
-  .cta-btns a:hover {
-    box-shadow: 0px 0px 5px dimgray;
-  }
 
+  .cta-btns a:hover,
   details:hover {
-    box-shadow: 0px 0px 5px dimgray;
+    box-shadow: 0 0 5px 5px var(--body-alt);
     cursor: pointer;
   }
 }
 
 details {
-  border: 2px solid #aaa;
+  border: 1px solid #aaaaaa50;
   border-radius: 18px;
   padding: 0.5rem;
   padding-bottom: 0;
-  margin: 1rem;
+  margin-bottom: 1rem;
   transition: linear box-shadow 0.1s;
+  background: var(--body-alt);
 }
 
 summary {
