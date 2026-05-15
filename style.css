@@ -541,10 +541,11 @@ article a.button {
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 30px;
-  transition: linear 0.2s;
+  transition: ease-in-out 0.2s;
   font-weight: bold;
-  border: 2px solid #aaa;
+  border: 1px solid #aaaaaa50;
   color: unset !important;
+  background: var(--body-alt);
 }
 
 @media (hover: hover) {
@@ -553,6 +554,7 @@ article a.button {
   details:hover {
     box-shadow: 0 0 5px 5px var(--body-alt);
     cursor: pointer;
+    transform: scale(101%);
   }
 }
 
@@ -564,6 +566,7 @@ details {
   margin-bottom: 1rem;
   transition: linear box-shadow 0.1s;
   background: var(--body-alt);
+  transition: ease-in-out 0.2s;
 }
 
 summary {
