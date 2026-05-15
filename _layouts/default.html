@@ -18,10 +18,18 @@
                 <br>
                 <p>{{ page.description }}</p>
             </div>
+
+            <!-- Show TOC if more than 1 header -->
+            {% assign toc = content | toc_only %}
+            {% assign toc_items = toc | split: 'toc-entry' | size %}
+
+            {% if toc_items > 2 %}
             <details>
                 <summary>Innehåll</summary>
-                {{ content | toc_only }}
+                {{ toc }}
             </details>
+            {% endif %}
+
             {{ content }}
             <time class="updated" datetime="{{ page.date | date: '%m-%d-%Y' }}">{{ page.date | date: "%-d %B %Y"}}
         </article>
