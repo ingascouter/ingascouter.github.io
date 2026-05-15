@@ -18,11 +18,10 @@
                 <br>
                 <p>{{ page.description }}</p>
             </div>
-            <!-- Does not work as github pages does not support this plugin. I will try to work around this later.
             <details>
                 <summary>Innehåll</summary>
                 {{ content | toc_only }}
-            </details> -->
+            </details>
             {{ content }}
             <time class="updated" datetime="{{ page.date | date: '%m-%d-%Y' }}">{{ page.date | date: "%-d %B %Y"}}
         </article>
