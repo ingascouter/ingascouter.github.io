@@ -70,11 +70,7 @@ date: 2025-01-23
     </details>
     <details name="faq">
         <summary>Vad kostar det att vara med?</summary>
-        Medlemsavgiften för <a href="https://www.scout.fi/for-scouter/medlemstjanster/medlemsavgift/">medlemstyp</a>
-        1
-        är 85€,
-        medlemstyp 2 75€ och medlemstyp 3 22€ per år, men man kan
-        ansöka om befrielse från avgiften.
+        Medlemsavgiften är 85&nbsp;€/år för scouter från sju år och uppåt. Scouter med aktivt ledaruppdrag betalar 69&nbsp;€/år, och familjescoutbarn samt understödande medlemmar betalar 22&nbsp;€/år.
     </details>
     <details name="faq">
         <summary>När och var träffas ni?</summary>
