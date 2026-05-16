@@ -1,7 +1,5 @@
 ---
-
 date: 17-01-2025
-banner: /assets/banners/banner.png
 title: Förmåner som scout
 description: "Medlemskap i scouterna är kostnadseffektivt och medför flera förmåner som medlemmar kan dra nytta av."
 ---

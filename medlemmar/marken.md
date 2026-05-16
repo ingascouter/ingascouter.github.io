@@ -1,7 +1,5 @@
 ---
-
 date: 17-01-2025
-banner: /assets/banners/banner.png
 title: Klädsel och märken
 description: "I scouterna har vi gemensamma märken som bärs av alla scouter, oavsett åldersgrupp. Dessutom har vi märken som är specifika för varje åldersgrupp."
 ---

@@ -1,7 +1,5 @@
 ---
-
 date: 01-01-1970
-banner: /assets/banners/banner.png
 title: Vad är scouting?
 description: "Scouting är en rolig, mångsidig och nyttig hobby för barn, unga och vuxna. Scouting är små och stora äventyr som du kan uppleva med dina vänner."
 ---

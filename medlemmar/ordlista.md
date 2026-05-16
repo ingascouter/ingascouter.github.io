@@ -1,7 +1,5 @@
 ---
-
 date: 2025-02-04
-banner: /assets/banners/banner.png
 title: Kårens ordlista
 description: "Inom scoutingen används många ord som inte dyker upp så ofta i allmänheten. För att dokumentera dessa ord har vi sammanställt en ordlista med ord som används av scouter."
 ---

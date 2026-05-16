@@ -1,6 +1,5 @@
 ---
 layout: home
-
 title: Hem
 description: "Ingå Scouter är den enda svenskspråkiga scoutkåren i Ingå som erbjuder aktiviteter för alla åldrar,
 inklusive

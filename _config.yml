@@ -11,6 +11,8 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+      banner: "/assets/banners/banner.png"
+      date: 01-01-1970
       toc: true
 
 plugins:
