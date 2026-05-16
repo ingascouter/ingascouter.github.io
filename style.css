@@ -317,13 +317,18 @@ li:has(li .active) {
     left: 0;
     right: 0;
     top: -100%;
-    height: calc(100vh - 55px);
+    padding-bottom: 50vw;
     background: var(--nav-clr);
     flex-direction: column;
     transition: var(--nav-time);
     align-items: center;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    clip-path: polygon(0% 0%,
+        100% 0%,
+        100% calc(100% - 50vw),
+        50% 100%,
+        0% calc(100% - 50vw));
   }
 
   .nav-links li {
@@ -338,7 +343,7 @@ li:has(li .active) {
   #mobile-menu-toggle:checked~.nav-links {
     top: 55px;
     /* Maintinance */
-    top: 110px;
+    top: calc(55px + 80px);
   }
 
   #mobile-menu-toggle:checked~.hamburger span:nth-child(1) {
@@ -406,8 +411,7 @@ main {
 }
 
 .fade {
-  mask-image:
-    linear-gradient(rgba(0, 0, 0, 1),
+  mask-image: linear-gradient(rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 0.5) 70%,
       rgba(0, 0, 0, 0));
   margin-bottom: -3rem;
@@ -798,8 +802,7 @@ footer a {
   footer {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    grid-template-areas:
-      "logo-left logo-right"
+    grid-template-areas: "logo-left logo-right"
       "footer-text footer-text";
   }
 
