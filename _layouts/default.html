@@ -31,9 +31,10 @@
             {% endif %}
 
             {{ content }}
-            <time class="updated" datetime="{{ page.date | date: '%m-%d-%Y' }}">{{ page.date | date: "%-d %B %Y"}}
+            <time class="updated" datetime="{{ page.date | date: '%m-%d-%Y' }}">
+                {{ page.date | swedish_date }}
+            </time>
         </article>
-        </time>
     </main>
     {% include footer.html %}
 </body>
