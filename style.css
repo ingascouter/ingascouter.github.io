@@ -399,13 +399,11 @@ li:has(li .active) {
 /* ------------ Main ------------ */
 main {
   min-height: calc(100svh - 55px);
-  max-width: 1500px;
-  margin: auto;
 }
 
 .banner {
   width: 100%;
-  height: 305px;
+  max-height: 305px;
   object-fit: cover;
   border-radius: 0 0 30px 30px;
 }
