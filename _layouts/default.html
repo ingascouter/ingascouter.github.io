@@ -31,9 +31,9 @@
             {% endif %}
 
             {{ content }}
-            <time class="updated" datetime="{{ page.date | date: '%m-%d-%Y' }}">
-                {{ page.date | swedish_date }}
-            </time>
+            <span class="updated">Uppdaterad <time datetime="{{ page.date | date: '%m-%d-%Y' }}">
+                    {{ page.date | swedish_date }}
+                </time></span>
         </article>
     </main>
     {% include footer.html %}

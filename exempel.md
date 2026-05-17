@@ -9,7 +9,8 @@ date: 2025-01-23
 
 För vanliga stycken skriver du bara fritext.
 
-Genom att först omgiva text emellan hakparenteser och direkt efter skriva en länk inom ett par vanliga parenteser kan man skapa en länk
+Genom att först omgiva text emellan hakparenteser och direkt efter skriva en länk inom ett par vanliga parenteser kan
+man skapa en länk
 
 \[Detta är en länk](https://www.example.org)
 
@@ -21,7 +22,8 @@ Denna länk kan också peka på en rubrik, som i exemplet nedanför:
 
 [Länk till underubriken vi skapade](#med-två--får-man-en-underrubrik)
 
-För att lägga till en rubrik gör du som med länken, där texten är det synnedsatta läser, bara att du lägger ett utropstecken före:
+För att lägga till en rubrik gör du som med länken, där texten är det synnedsatta läser, bara att du lägger ett
+utropstecken före:
 
 \!\[En söt liten anka](/assets/pictures/anka.png)
 
@@ -41,12 +43,16 @@ För att skapa ett citat kan du använda en vinkelparentes som pekar åt höger
 
 - Punkter kan skapas med minus/bindestreck
 
-1. Listor skapas enkelt genom att 
-2. skriva ett nummer följt med en punkt 
+1. Listor skapas enkelt genom att
+2. skriva ett nummer följt med en punkt
 3. och din text
 
 ```Man kan göra kodblock genom att omgiva text med ` ```
 
 Du kan också använda verktyg som [StackEdit](https://stackedit.io/app) för att skriva
 
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FHelsinki&mode=WEEK&showTz=0&showCalendars=0&title&src=aW5nYXNjb3V0ZXJAZ21haWwuY29t&color=%237986cb" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe
+    src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FHelsinki&mode=WEEK&showTz=0&showCalendars=0&title&src=aW5nYXNjb3V0ZXJAZ21haWwuY29t&color=%237986cb"
+    style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+<span class="spoiler">Detta är en spoiler</span>
