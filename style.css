@@ -568,7 +568,6 @@ details {
   details:hover {
     box-shadow: 0 0 5px 5px var(--body-alt);
     cursor: pointer;
-    transform: scale(101%);
   }
 }
 
@@ -583,6 +582,7 @@ summary {
 
 details[open] {
   padding-bottom: 0.5rem;
+  transform: scale(101%);
 }
 
 details[open] summary {
