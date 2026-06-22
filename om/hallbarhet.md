@@ -27,7 +27,7 @@ description: "Ingå Scouter har certifierats som en hållbar scoutkår av Finlan
         gammalt
         genom att först använda det vars sista förbrukningsdag infaller tidigast</li>
     <li>Utnyttja receptbanken och lägg gärna till egna recept på <a
-            href="scout.fi/for-karen/karadministration/hallbarhet-i-karen/receptbanken">scout.fi/for-karen/karadministration/hallbarhet-i-karen/receptbanken</a>
+            href="https://www.scout.fi/for-karen/karadministration/hallbarhet-i-karen/receptbanken">scout.fi/for-karen/karadministration/hallbarhet-i-karen/receptbanken</a>
     </li>
     <li>Erbjud möjligheten att ta med eventuellt överbliven mat hem efter evenemang för att undvika slöseri
     </li>
