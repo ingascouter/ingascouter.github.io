@@ -30,7 +30,7 @@
             </details>
             {% endif %}
 
-            {% include anchor_headings.html html=content anchorBody="#" beforeHeading="true" generateId="true"
+            {% include anchor_headings.html html=content anchorBody="#" beforeHeading="false" generateId="true"
             anchorClass="anchor" headerAttrs="class='anchor-heading'" %}
             <span class="updated">Uppdaterad <time datetime="{{ page.date | date: '%m-%d-%Y' }}">
                     {{ page.date | swedish_date }}
