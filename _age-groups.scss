@@ -1,0 +1,73 @@
+/* Åldersgrupper */
+.group-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100px);
+    margin-bottom: -100px;
+}
+
+.blue-bg {
+    border-radius: 20px;
+    padding: 20px;
+    margin: 2rem 0;
+    background: var(--button-default);
+}
+
+.blue-bg * {
+    color: white;
+    margin: 0;
+}
+
+.blue-bg p {
+    margin-left: 20px;
+}
+
+blockquote:before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+blockquote::before,
+blockquote::after {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 4em;
+    top: 0.2em;
+    position: relative;
+}
+
+.logo-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    background: white;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aldersgrupp-logo {
+    height: 130px;
+    filter: drop-shadow(0 0 3px black);
+}
+
+#grupp {
+    font-family: Tondu;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+#alder {
+    color: var(--button-hover);
+    margin: 0;
+}

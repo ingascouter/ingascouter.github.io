@@ -1,0 +1,64 @@
+/* ------------ Media Queries ------------ */
+@media screen and (max-width: 830px) {
+    .group-title {
+        flex-direction: column;
+    }
+
+    #grupp {
+        color: unset;
+    }
+
+    .logo-container {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    div:has(#grupp) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media print, (max-width: 830px) {
+    footer {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        grid-template-areas:
+            "logo-left logo-right"
+            "footer-text footer-text";
+    }
+
+    footer img {
+        height: 150px;
+        width: auto;
+    }
+
+    .footer-text {
+        margin-top: 20px;
+    }
+
+    .logo-right {
+        height: 120px;
+    }
+}
+
+@media print {
+    header,
+    footer,
+    .banner,
+    #scrolltotop {
+        display: none !important;
+    }
+
+    a {
+        color: black !important;
+    }
+
+    a::after {
+        display: inline-block;
+        content: "\00A0[" attr(href) "]";
+        color: gray;
+        font-style: italic;
+    }
+}

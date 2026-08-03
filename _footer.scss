@@ -1,0 +1,51 @@
+footer {
+    position: sticky;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    font-family: var(--body-font);
+    color: white;
+    text-decoration: none;
+    padding: 25px;
+    text-align: center;
+    background-color: var(--button-default);
+    grid-template-areas: "logo-left footer-text logo-right";
+    margin-top: 4rem;
+
+    img {
+        height: 150px;
+        width: auto;
+    }
+
+    h1 {
+        font-family: Bremen;
+    }
+
+    a {
+        color: white;
+    }
+
+    .socials {
+        margin-top: 8px;
+        font-size: 40px;
+
+        i {
+            margin: 8px 10px;
+        }
+    }
+
+    .logo-left {
+        grid-area: logo-left;
+    }
+
+    .footer-text {
+        grid-area: footer-text;
+    }
+
+    .logo-right {
+        grid-area: logo-right;
+        height: 120px;
+    }
+}

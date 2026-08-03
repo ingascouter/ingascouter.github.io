@@ -1,0 +1,75 @@
+#home h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#home p {
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 65ch;
+}
+
+.fullpage {
+    min-height: 100vh;
+    align-content: center;
+    /* scroll-snap-align: start;
+  scroll-snap-stop: always; */
+}
+
+.cta-btns {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+details,
+.cta-btns a {
+    border: 1px solid #aaaaaa50;
+    transition: ease-in-out 0.2s;
+    background: var(--body-alt);
+}
+
+.cta-btns > a {
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: unset !important;
+}
+
+details {
+    border-radius: 18px;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+}
+
+@media (hover: hover) {
+    .cta-btns a:hover,
+    details:hover {
+        box-shadow: 0 0 5px 5px var(--body-alt);
+        cursor: pointer;
+    }
+}
+
+summary {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: -0.5rem -0.5rem 0;
+    padding: 0.5rem 1rem;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+details[open] {
+    padding-bottom: 0.5rem;
+    transform: scale(101%);
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5rem;
+}
