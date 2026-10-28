@@ -32,8 +32,8 @@ nav {
     }
 
     a > img {
-        width: 15vw;
-        height: 15vw;
+        width: 40px;
+        height: 40px;
         display: block;
         max-width: unset;
     }
@@ -43,7 +43,7 @@ nav {
         display: inline-block;
     }
 
-    .dropdown input[type="radio"] {
+    .dropdown input[type="checkbox"] {
         display: none;
     }
 
@@ -223,39 +223,31 @@ nav {
         ~ .hamburger span:nth-child(3) {
             transform: rotate(-45deg) translate(7px, -7px);
         }
-        ~ .nav-links .mobile-logo > img {
-            width: 5rem;
-            height: 5rem;
-        }
-        ~ .desk-logo {
+        ~ .logo {
             display: none;
         }
     }
 
-    .desk-logo,
+    .logo,
     .mobile-logo {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        transition:
-            width var(--nav-time),
-            height var(--nav-time),
-            display var(--nav-time);
     }
 
-    .desk-logo {
+    .logo {
         top: 0;
     }
 
     .mobile-logo {
         bottom: 10vw;
+        > img {
+            width: 15vw;
+            height: 15vw;
+        }
     }
 
-    .mobile-hide {
-        display: none;
-    }
-
-    .dropdown input[type="radio"]:checked {
+    .dropdown input[type="checkbox"]:checked {
         ~ .dropdown-content {
             grid-template-rows: 1fr;
         }

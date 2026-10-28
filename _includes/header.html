@@ -11,7 +11,7 @@
                     <span></span>
                 </label>
 
-                <a href="/" title="Hem" class="desk-logo" aria-label="Home">
+                <a href="/" title="Hem" class="logo" aria-label="Home">
                     <img draggable="false" height="40" width="40"
                         src="https://ingascouter.github.io/assets/icons/logo.png" alt="Logo">
                 </a>
@@ -20,7 +20,7 @@
                     {% for item in site.data.nav %}
                     {% if item.dropdown %}
                     <li class="dropdown">
-                        <input type="radio" id="dropdown{{ forloop.index }}" name="dropdown">
+                        <input type="checkbox" id="dropdown{{ forloop.index }}" name="dropdown">
                         <label title="{{ item.title }}" for="dropdown{{ forloop.index }}" class="dd-btn">
                             {{ item.title }}
                         </label>
