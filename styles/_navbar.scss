@@ -223,13 +223,32 @@ nav {
         ~ .hamburger span:nth-child(3) {
             transform: rotate(-45deg) translate(7px, -7px);
         }
+        ~ .nav-links .mobile-logo > img {
+            width: 5rem;
+            height: 5rem;
+        }
+        ~ .desk-logo {
+            display: none;
+        }
     }
 
-    .logo {
+    .desk-logo,
+    .mobile-logo {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        transition:
+            width var(--nav-time),
+            height var(--nav-time),
+            display var(--nav-time);
+    }
+
+    .desk-logo {
         top: 0;
+    }
+
+    .mobile-logo {
+        bottom: 3rem;
     }
 
     .mobile-hide {

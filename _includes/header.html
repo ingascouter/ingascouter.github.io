@@ -1,6 +1,8 @@
 <header>
     <nav id="autohide">
         <div class="navbar">
+
+
             <div class="nav-left">
                 <input type="checkbox" id="mobile-menu-toggle">
                 <label for="mobile-menu-toggle" class="hamburger" aria-label="Toggle menu">
@@ -8,10 +10,12 @@
                     <span></span>
                     <span></span>
                 </label>
-                <a href="/" title="Hem" class="logo" aria-label="Home">
+
+                <a href="/" title="Hem" class="desk-logo" aria-label="Home">
                     <img draggable="false" height="40" width="40"
                         src="https://ingascouter.github.io/assets/icons/logo.png" alt="Logo">
                 </a>
+
                 <ul class="nav-links">
                     {% for item in site.data.nav %}
                     {% if item.dropdown %}
@@ -34,8 +38,15 @@
                     </li>
                     {% endif %}
                     {% endfor %}
+                    <a href="/" title="Hem" class="mobile-logo desk-hide" aria-label="Home">
+                        <img draggable="false" height="40" width="40"
+                            src="https://ingascouter.github.io/assets/icons/logo.png" alt="Logo">
+                    </a>
                 </ul>
+
             </div>
+
+
             <ul class="nav-right">
                 <li id="webshop" class="mobile-hide"><a href="https://www.heydreamshop.com/ingascouter"
                         onclick="webshopCode()" target="_blank" rel="noopener noreferrer" title="Webshop"><i
