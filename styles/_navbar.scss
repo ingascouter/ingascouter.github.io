@@ -247,6 +247,10 @@ nav {
         }
     }
 
+    .mobile-hide {
+        display: none;
+    }
+
     .dropdown input[type="checkbox"]:checked {
         ~ .dropdown-content {
             grid-template-rows: 1fr;
