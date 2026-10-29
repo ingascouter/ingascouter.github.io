@@ -17,7 +17,7 @@ window.onscroll = function () {
   }
   // Otherwise, handle normal scroll behavior
   else if (currentScrollPos > prevScrollPos && currentScrollPos > 0) {
-    document.getElementById("autohide").style.top = "-999px";
+    document.getElementById("autohide").style.top = "-55px";
   } else {
     document.getElementById("autohide").style.top = "0";
   }
