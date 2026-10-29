@@ -35,11 +35,22 @@
                                 </ul>
                             </li>
                             {% else %}
-                            <li class="desk-hide">
+                            <li>
                                 <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
                             </li>
                             {% endif %}
                             {% endfor %}
+
+                            <li class="desk-hide">
+                                <a href="https://kuksa.partio.fi" target="_blank" rel="noopener noreferrer"
+                                    title="Kuksa">Kuksa</a>
+                            </li>
+
+                            <li class="desk-hide">
+                                <a href="https://www.heydreamshop.com/ingascouter" target="_blank"
+                                    rel="noopener noreferrer" title="Webshop">Webshop</a>
+                            </li>
+
                         </ul>
                         <a href="/" title="Hem" class="mobile-logo desk-hide" aria-label="Home">
                             <img draggable="false" height="40" width="40"
