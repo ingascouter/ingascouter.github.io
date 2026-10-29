@@ -16,33 +16,37 @@
                         src="https://ingascouter.github.io/assets/icons/logo.png" alt="Logo">
                 </a>
 
-                <ul class="nav-links">
-                    {% for item in site.data.nav %}
-                    {% if item.dropdown %}
-                    <li class="dropdown">
-                        <input type="checkbox" id="dropdown{{ forloop.index }}" name="dropdown">
-                        <label title="{{ item.title }}" for="dropdown{{ forloop.index }}" class="dd-btn">
-                            {{ item.title }}
-                        </label>
-                        <ul class="dropdown-content">
-                            <div>
-                                {% for link in item.dropdown %}
-                                <li><a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a></li>
-                                {% endfor %}
-                            </div>
+                <div class="nav-links">
+                    <div class="nav-panel">
+                        <ul class="nav-items">
+                            {% for item in site.data.nav %}
+                            {% if item.dropdown %}
+                            <li class="dropdown">
+                                <input type="checkbox" id="dropdown{{ forloop.index }}" name="dropdown">
+                                <label title="{{ item.title }}" for="dropdown{{ forloop.index }}" class="dd-btn">
+                                    {{ item.title }}
+                                </label>
+                                <ul class="dropdown-content">
+                                    <div>
+                                        {% for link in item.dropdown %}
+                                        <li><a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a></li>
+                                        {% endfor %}
+                                    </div>
+                                </ul>
+                            </li>
+                            {% else %}
+                            <li class="desk-hide">
+                                <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
+                            </li>
+                            {% endif %}
+                            {% endfor %}
                         </ul>
-                    </li>
-                    {% else %}
-                    <li class="desk-hide">
-                        <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
-                    </li>
-                    {% endif %}
-                    {% endfor %}
-                    <a href="/" title="Hem" class="mobile-logo desk-hide" aria-label="Home">
-                        <img draggable="false" height="40" width="40"
-                            src="https://ingascouter.github.io/assets/icons/logo.png" alt="Logo">
-                    </a>
-                </ul>
+                        <a href="/" title="Hem" class="mobile-logo desk-hide" aria-label="Home">
+                            <img draggable="false" height="40" width="40"
+                                src="https://ingascouter.github.io/assets/icons/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
 
             </div>
 
