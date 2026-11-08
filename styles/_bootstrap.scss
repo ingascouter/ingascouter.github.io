@@ -90,7 +90,8 @@ h6 {
     --nav-clr: var(--button-default);
     --nav-hover: var(--button-hover);
     --nav-font: var(--body-font);
-    --nav-time: 0.3s;
+    --nav-open-time: 0.5s;
+    --nav-dd-time: 0.3s;
 
     font-family: var(--body-font);
     background: var(--button-default);
