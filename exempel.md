@@ -1,7 +1,8 @@
 ---
+title: Sidans titel
 description: "En beskrivning av vad artikeln kommer att handla om"
-title: Test
 date: 2025-01-23
+# YYYY-MM-DD
 ---
 
 ## Med två \#\# får man en underrubrik
