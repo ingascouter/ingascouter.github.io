@@ -53,3 +53,5 @@ För att skapa ett citat kan du använda en vinkelparentes som pekar åt höger
 Du kan också använda verktyg som [StackEdit](https://stackedit.io/app) för att skriva
 
 För mer avancerad användning, läs <https://kramdown.gettalong.org/syntax>
+
+Jag kan också rekommendera <https://www.hansenh.com/post/jekyll-formatting-cheatsheet>
