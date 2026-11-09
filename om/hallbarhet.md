@@ -3,6 +3,7 @@ date: 01-01-1970
 title: Hållbarhet
 description: "Ingå Scouter har certifierats som en hållbar scoutkår av Finlands Svenska Scouter, vilket innebär att vi uppfyller vissa kriterier för hållbarhet. Nedan följer en lista med saker som vi fokuserar på inom vår kår."
 ---
+{% include abbreviations.md %}
 
 <h2>Fostran</h2>
 <ul>

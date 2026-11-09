@@ -3,6 +3,7 @@ date: 17-01-2025
 title: Klädsel och märken
 description: "I scouterna har vi gemensamma märken som bärs av alla scouter, oavsett åldersgrupp. Dessutom har vi märken som är specifika för varje åldersgrupp."
 ---
+{% include abbreviations.md %}
 
 På den här sidan kan du få [allmän information](#general) om märken och läsa mer om [hur riggen ska se ut](#riggen).
 

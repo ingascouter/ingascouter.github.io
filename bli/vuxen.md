@@ -3,6 +3,7 @@ date: 01-01-1970
 title: Kom med som vuxen!
 description: "Ingå Scouter är den enda svenskspråkiga scoutkåren i Ingå som erbjuder aktiviteter för alla åldrar, inklusive veckomöten, hajker och läger. Vår vision är att främja hållbarhet, ledarskap och gemenskap för en bättre framtid för unga. Vad väntar du på, kom med!"
 ---
+{% include abbreviations.md %}
 
 Ingå Scouter i sin nuvarande form väcktes till liv igen hösten 1993 efter att ha sovit "några" år (grundades ursprungligen som Ingånejdens flickscouter år 1956). Efter att ha legat på båda sidorna om 50-strecket i över tio år, har kåren vuxit och har för tillfället ca 90 medlemmar. Nya hurtiga scouter är alltid välkomna med i vårt glada gäng. Vi har verksamhet för alla åldrar.
 

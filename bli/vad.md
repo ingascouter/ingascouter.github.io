@@ -3,6 +3,7 @@ date: 01-01-1970
 title: Vad är scouting?
 description: "Scouting är en rolig, mångsidig och nyttig hobby för barn, unga och vuxna. Scouting är små och stora äventyr som du kan uppleva med dina vänner."
 ---
+{% include abbreviations.md %}
 
 Verksamheten sker både ute och inne. Inom scouterna får du pyssla, spela, tillreda mat, göra utflykter i naturen, delta i läger, vandra, segla och mycket annat. En viktig del är gemenskapen där ingen blir lämnad utanför och tankesättet “learning by doing” som genomsyrar hela verksamheten. Det finns en plats för alla, du är välkommen som du är – också som vuxen. Scouting stöder barns och ungas fostran och uppmuntrar till att utvecklas både som individ och som en del av en grupp. I scouterna lär du dig vardags- och medborgarfärdigheter, problemlösning och ledarskap.
 
