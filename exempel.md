@@ -52,8 +52,4 @@ För att skapa ett citat kan du använda en vinkelparentes som pekar åt höger
 
 Du kan också använda verktyg som [StackEdit](https://stackedit.io/app) för att skriva
 
-<iframe
-    src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FHelsinki&mode=WEEK&showTz=0&showCalendars=0&title&src=aW5nYXNjb3V0ZXJAZ21haWwuY29t&color=%237986cb"
-    style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
-<span class="spoiler">Detta är en spoiler</span>
+För mer avancerad användning, läs <https://kramdown.gettalong.org/syntax>
