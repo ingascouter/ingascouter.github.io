@@ -4,6 +4,12 @@ lang: sv
 title: Ingå Scouter
 description: En scoutkår i Ingå, Finland
 
+social:
+  name: Ingå Scouter r.f.
+  links:
+    - https://www.facebook.com/ingascouter
+    - https://www.instagram.com/ingascouter
+
 defaults:
   -
     scope:
